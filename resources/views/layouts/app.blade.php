@@ -117,11 +117,11 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="netabout">
                                 <a href="index.html" class="logo">
-                                    <img src="images/logo-footer.svg" alt="netcom">
+                                    <img src="{{asset('assets/images/logo-footer.svg')}}" alt="netcom">
                                 </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
+                            
                             </div>
-                            <div class="contactus">
+                           <!-- <div class="contactus">
                                 <ul>
                                     <li>
                                         <div class="info">
@@ -142,10 +142,10 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="navigation">
+                          <!--  <div class="navigation">
                                 <h3>Navigation</h3>
                                 <div class="nav-footer">
                                     <ul>
@@ -163,10 +163,10 @@
                                         <li class="no-mgb"><a href="contact-us.html">Contact Us</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="widget">
+                          <!--  <div class="widget">
                                 <h3>Twitter Feeds</h3>
                                 <div class="twitter-widget contuct">
                                     <div class="twitter-area">
@@ -199,9 +199,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                      <!--  <div class="col-lg-3 col-md-6">
                             <div class="newsletters">
                                 <h3>Newsletters</h3>
                                 <p>Sign Up for Our Newsletter to get Latest Updates and Offers. Subscribe to receive news in your inbox.</p>
@@ -214,7 +214,7 @@
                                     <p class="subscription-success"></p>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

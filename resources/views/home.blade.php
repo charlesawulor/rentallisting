@@ -362,7 +362,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-1.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-1.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -384,7 +384,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-2.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-2.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -406,7 +406,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-3.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-3.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -428,7 +428,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-4.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-4.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -450,7 +450,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-5.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-5.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -472,7 +472,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-6.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-6.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -498,7 +498,7 @@
                     <article class="col-lg-4 col-md-6 col-xs-12 serv" data-aos="fade-up">
                         <div class="serv-flex">
                             <div class="art-1 img-13">
-                                <img src="images/icons/icon-4.svg" alt="">
+                                <img src="assets/images/icons/icon-4.svg" alt="">
                                 <h3>Wide Renge Of Properties</h3>
                             </div>
                             <div class="service-text-p">
@@ -509,7 +509,7 @@
                     <article class="col-lg-4 col-md-6 col-xs-12 serv" data-aos="fade-up">
                         <div class="serv-flex">
                             <div class="art-1 img-14">
-                                <img src="images/icons/icon-5.svg" alt="">
+                                <img src="assets/images/icons/icon-5.svg" alt="">
                                 <h3>Trusted by thousands</h3>
                             </div>
                             <div class="service-text-p">
@@ -520,7 +520,7 @@
                     <article class="col-lg-4 col-md-6 col-xs-12 serv mb-0 pt" data-aos="fade-up">
                         <div class="serv-flex arrow">
                             <div class="art-1 img-15">
-                                <img src="images/icons/icon-6.svg" alt="">
+                                <img src="assets/images/icons/icon-6.svg" alt="">
                                 <h3>Financing made easy</h3>
                             </div>
                             <div class="service-text-p">
@@ -560,7 +560,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-1.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-1.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -582,7 +582,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-2.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-2.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -604,7 +604,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-3.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-3.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -626,7 +626,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-4.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-4.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -648,7 +648,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-5.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-5.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -670,7 +670,7 @@
                                             <li>Baths <span>3</span></li>
                                         </ul>
                                     </div>
-                                    <img src="images/feature-properties/fp-6.jpg" alt="">
+                                    <img src="assets/images/feature-properties/fp-6.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -705,7 +705,7 @@
                                         <div class="homes-tag button alt featured">Featured</div>
                                         <div class="homes-tag button alt sale">For Sale</div>
                                         <div class="homes-price">$9,000/mo</div>
-                                        <img src="images/blog/b-11.jpg" alt="home-1" class="img-responsive">
+                                        <img src="assets/images/blog/b-11.jpg" alt="home-1" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="button-effect">
@@ -750,7 +750,7 @@
                                         <div class="homes-tag button alt featured">Featured</div>
                                         <div class="homes-tag button sale rent">For Rent</div>
                                         <div class="homes-price">$3,000/mo</div>
-                                        <img src="images/feature-properties/fp-10.jpg" alt="home-1" class="img-responsive">
+                                        <img src="assets/images/feature-properties/fp-10.jpg" alt="home-1" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="button-effect">
@@ -806,7 +806,7 @@
                             <div class="news-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="news-img-link">
                                     <div class="news-item-img">
-                                        <img class="img-responsive" src="images/blog/b-1.jpg" alt="blog image">
+                                        <img class="img-responsive" src="assets/images/blog/b-1.jpg" alt="blog image">
                                     </div>
                                 </a>
                                 <div class="news-item-text">
@@ -826,7 +826,7 @@
                                         <a href="blog-details.html" class="news-link">Read more...</a>
                                         <div class="admin">
                                             <p>By, Karl Smith</p>
-                                            <img src="images/testimonials/ts-6.jpg" alt="">
+                                            <img src="assets/images/testimonials/ts-6.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -836,7 +836,7 @@
                             <div class="news-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="news-img-link">
                                     <div class="news-item-img">
-                                        <img class="img-responsive" src="images/blog/b-2.jpg" alt="blog image">
+                                        <img class="img-responsive" src="assets/images/blog/b-2.jpg" alt="blog image">
                                     </div>
                                 </a>
                                 <div class="news-item-text">
@@ -856,7 +856,7 @@
                                         <a href="blog-details.html" class="news-link">Read more...</a>
                                         <div class="admin">
                                             <p>By, Lis Jhonson</p>
-                                            <img src="images/testimonials/ts-5.jpg" alt="">
+                                            <img src="assets/images/testimonials/ts-5.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -866,7 +866,7 @@
                             <div class="news-item no-mb" data-aos="fade-up">
                                 <a href="blog-details.html" class="news-img-link">
                                     <div class="news-item-img">
-                                        <img class="img-responsive" src="images/blog/b-3.jpg" alt="blog image">
+                                        <img class="img-responsive" src="assets/images/blog/b-3.jpg" alt="blog image">
                                     </div>
                                 </a>
                                 <div class="news-item-text">
@@ -886,7 +886,7 @@
                                         <a href="blog-details.html" class="news-link">Read more...</a>
                                         <div class="admin">
                                             <p>By, Ted Willians</p>
-                                            <img src="images/testimonials/ts-4.jpg" alt="">
+                                            <img src="assets/images/testimonials/ts-4.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -906,16 +906,16 @@
                     <p>The Companies That Represent Us.</p>
                 </div>
                 <div class="owl-carousel style2">
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/11.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/12.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/13.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/14.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/15.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/16.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/17.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/11.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/12.jpg" alt=""></div>
-                    <div class="owl-item" data-aos="fade-up"><img src="images/partners/13.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/11.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/12.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/13.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/14.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/15.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/16.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/17.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/11.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/12.jpg" alt=""></div>
+                    <div class="owl-item" data-aos="fade-up"><img src="assets/images/partners/13.jpg" alt=""></div>
                 </div>
             </div>
         </div>
