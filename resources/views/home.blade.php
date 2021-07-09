@@ -16,7 +16,7 @@
                                     <br class="d-md-none">
                                     <span class="typed border-bottom"></span>
                                 </h1>
-                                    <p class="mt-4">We Have Over Million Properties For You.</p>
+                                    <p class="mt-4">We Have Over Million Properties Just For You.</p>
                                 </div>
                                 <!--/ End Welcome Text -->
                                 <!-- Search Form -->
