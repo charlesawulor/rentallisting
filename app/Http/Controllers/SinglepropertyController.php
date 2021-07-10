@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Session;
+
 use Illuminate\Http\Request;
 
-use App\Listing;
-
-class ListingController extends Controller
+class SinglepropertyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,7 +34,7 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-      //
+        //
     }
 
     /**
@@ -47,8 +45,7 @@ class ListingController extends Controller
      */
     public function show($id)
     {
-        $listings = listing::find($id);
-        return view('single-property')->with('listings',$listings);
+        //
     }
 
     /**

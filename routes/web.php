@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::resource('single-property','ListingController');
 
 //Route::get('/home', 'ListingController@show')->name('home');

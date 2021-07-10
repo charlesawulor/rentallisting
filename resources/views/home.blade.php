@@ -352,7 +352,7 @@
                     <div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
                         <div class="project-single" data-aos="zoom-in">
                             <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
+                                <a href="single-property/{{$listing->id}}" class="listing-img-container">
                                     <div class="listing-badges">
                                         <span class="featured">$ {{$listing->price}}</span>
                                         <span>For {{$listing->status}}</span>
