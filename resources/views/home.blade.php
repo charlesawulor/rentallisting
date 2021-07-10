@@ -16,7 +16,7 @@
                                     <br class="d-md-none">
                                     <span class="typed border-bottom"></span>
                                 </h1>
-                                    <p class="mt-4">We Have Over Million Properties Just For You.</p>
+                                    
                                 </div>
                                 <!--/ End Welcome Text -->
                                 <!-- Search Form -->
@@ -340,8 +340,8 @@
             <div class="container">
                 <div class="row">
                     <div class="section-title col-md-5">
-                        <h3>Properties</h3>
-                        <h2>For Sale</h2>
+                        <h3>Recently Added</h3>
+                        <h2>Properties</h2>
                     </div>
                 </div>
 
