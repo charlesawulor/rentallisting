@@ -345,10 +345,10 @@
                     </div>
                 </div>
 
-
+            <div class="row portfolio-items">  
                 @if(count($listings) > 0)	
 	                                @foreach($listings as $listing)  
-                <div class="row portfolio-items">
+              
                     <div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
                         <div class="project-single" data-aos="zoom-in">
                             <div class="listing-item compact">
@@ -358,7 +358,7 @@
                                         <span>For {{$listing->status}}</span>
                                     </div>
                                     <div class="listing-img-content">
-                                        <span class="listing-compact-title">{{$listing->property_type}} Luxury <i>{{$listing->city}}, {{$listing->state}}</i></span>
+                                        <span class="listing-compact-title">Luxury {{$listing->property_type}}  <i>{{$listing->city}}, {{$listing->state}}</i></span>
                                         <ul class="listing-hidden-content blue">
                                             <li>Area <span>{{$listing->size}}</span></li>
                                             <li>Living room <span>{{$listing->livingroom}}</span></li>
@@ -373,7 +373,7 @@
                     </div>
                 @endforeach
                 @endif
-
+               
 
 
                  <!--   <div class="item col-lg-4 col-md-6 col-xs-12 people rent">
