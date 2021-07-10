@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('home');
 });
+
+
+//Route::get('/home', 'ListingController@show')->name('home');

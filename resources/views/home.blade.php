@@ -344,30 +344,39 @@
                         <h2>For Sale</h2>
                     </div>
                 </div>
+
+
+                @if(count($listings) > 0)	
+	                                @foreach($listings as $listing)  
                 <div class="row portfolio-items">
                     <div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
                         <div class="project-single" data-aos="zoom-in">
                             <div class="listing-item compact">
                                 <a href="single-property-1.html" class="listing-img-container">
                                     <div class="listing-badges">
-                                        <span class="featured">$ 230,000</span>
-                                        <span>For Sale</span>
+                                        <span class="featured">$ {{$listing->price}}</span>
+                                        <span>For {{$listing->status}}</span>
                                     </div>
                                     <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>New Yor City</i></span>
+                                        <span class="listing-compact-title">{{$listing->property_type}} Luxury <i>{{$listing->city}}, {{$listing->state}}</i></span>
                                         <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
+                                            <li>Area <span>{{$listing->size}}</span></li>
+                                            <li>Living room <span>{{$listing->livingroom}}</span></li>
+                                            <li>Beds <span>{{$listing->bedroom}}</span></li>
+                                            <li>Baths <span>{{$listing->bathroom}}</span></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/feature-properties/fp-1.jpg" alt="">
+                                    <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="item col-lg-4 col-md-6 col-xs-12 people rent">
+                @endforeach
+                @endif
+
+
+
+                 <!--   <div class="item col-lg-4 col-md-6 col-xs-12 people rent">
                         <div class="project-single" data-aos="zoom-in">
                             <div class="listing-item compact">
                                 <a href="single-property-1.html" class="listing-img-container">
@@ -476,7 +485,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="bg-all">
                     <a href="properties-full-grid-1.html" class="btn btn-outline-light">View All</a>
