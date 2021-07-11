@@ -14,7 +14,8 @@ class ListingController extends Controller
      */
     public function index()
     {
-        //
+        $listings = listing::orderBy('id','asc')->get();
+       return view('single-property',compact ('listings'));
     }
 
     /**

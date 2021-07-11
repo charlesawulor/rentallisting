@@ -478,48 +478,16 @@
                                     </div>
                                 </div>
                                 <div class="main-search-field-2">
-                                    <div class="widget-boxed mt-5">
-                                        <div class="widget-boxed-header">
-                                            <h4>Recent Properties</h4>
-                                        </div>
-                                        <div class="widget-boxed-body">
-                                            <div class="recent-post">
-                                                <div class="recent-main">
-                                                    <div class="recent-img">
-                                                        <a href="blog-details.html"><img src="images/feature-properties/fp-1.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="info-img">
-                                                        <a href="blog-details.html"><h6>Family Home</h6></a>
-                                                        <p>$230,000</p>
-                                                    </div>
-                                                </div>
-                                                <div class="recent-main my-4">
-                                                    <div class="recent-img">
-                                                        <a href="blog-details.html"><img src="images/feature-properties/fp-2.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="info-img">
-                                                        <a href="blog-details.html"><h6>Family Home</h6></a>
-                                                        <p>$230,000</p>
-                                                    </div>
-                                                </div>
-                                                <div class="recent-main">
-                                                    <div class="recent-img">
-                                                        <a href="blog-details.html"><img src="images/feature-properties/fp-3.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="info-img">
-                                                        <a href="blog-details.html"><h6>Family Home</h6></a>
-                                                        <p>$230,000</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                  
                                     <div class="widget-boxed mt-5">
                                         <div class="widget-boxed-header mb-5">
                                             <h4>Feature Properties</h4>
                                         </div>
                                         <div class="widget-boxed-body">
                                             <div class="slick-lancers">
+
+                                            @if(count($listings) > 0)	
+	                                       @foreach($listings as $listing) 
                                                 <div class="agents-grid mr-0">
                                                     <div class="listing-item compact">
                                                         <a href="properties-details.html" class="listing-img-container">
@@ -536,110 +504,13 @@
                                                                     <li>Baths <span>3</span></li>
                                                                 </ul>
                                                             </div>
-                                                            <img src="images/feature-properties/fp-1.jpg" alt="">
+                                                            <img src="/rentallisting/storage/app/public/{{$listings->image2}}" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="agents-grid mr-0">
-                                                    <div class="listing-item compact">
-                                                        <a href="properties-details.html" class="listing-img-container">
-                                                            <div class="listing-badges">
-                                                                <span class="featured">$ 6,500</span>
-                                                                <span class="rent">For Rent</span>
-                                                            </div>
-                                                            <div class="listing-img-content">
-                                                                <span class="listing-compact-title">House Luxury <i>Los Angles</i></span>
-                                                                <ul class="listing-hidden-content">
-                                                                    <li>Area <span>720 sq ft</span></li>
-                                                                    <li>Rooms <span>6</span></li>
-                                                                    <li>Beds <span>2</span></li>
-                                                                    <li>Baths <span>3</span></li>
-                                                                </ul>
-                                                            </div>
-                                                            <img src="images/feature-properties/fp-2.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="agents-grid mr-0">
-                                                    <div class="listing-item compact">
-                                                        <a href="properties-details.html" class="listing-img-container">
-                                                            <div class="listing-badges">
-                                                                <span class="featured">$ 230,000</span>
-                                                                <span>For Sale</span>
-                                                            </div>
-                                                            <div class="listing-img-content">
-                                                                <span class="listing-compact-title">House Luxury <i>San Francisco</i></span>
-                                                                <ul class="listing-hidden-content">
-                                                                    <li>Area <span>720 sq ft</span></li>
-                                                                    <li>Rooms <span>6</span></li>
-                                                                    <li>Beds <span>2</span></li>
-                                                                    <li>Baths <span>3</span></li>
-                                                                </ul>
-                                                            </div>
-                                                            <img src="images/feature-properties/fp-3.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="agents-grid mr-0">
-                                                    <div class="listing-item compact">
-                                                        <a href="properties-details.html" class="listing-img-container">
-                                                            <div class="listing-badges">
-                                                                <span class="featured">$ 6,500</span>
-                                                                <span class="rent">For Rent</span>
-                                                            </div>
-                                                            <div class="listing-img-content">
-                                                                <span class="listing-compact-title">House Luxury <i>Miami FL</i></span>
-                                                                <ul class="listing-hidden-content">
-                                                                    <li>Area <span>720 sq ft</span></li>
-                                                                    <li>Rooms <span>6</span></li>
-                                                                    <li>Beds <span>2</span></li>
-                                                                    <li>Baths <span>3</span></li>
-                                                                </ul>
-                                                            </div>
-                                                            <img src="images/feature-properties/fp-4.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="agents-grid mr-0">
-                                                    <div class="listing-item compact">
-                                                        <a href="properties-details.html" class="listing-img-container">
-                                                            <div class="listing-badges">
-                                                                <span class="featured">$ 230,000</span>
-                                                                <span>For Sale</span>
-                                                            </div>
-                                                            <div class="listing-img-content">
-                                                                <span class="listing-compact-title">House Luxury <i>Chicago IL</i></span>
-                                                                <ul class="listing-hidden-content">
-                                                                    <li>Area <span>720 sq ft</span></li>
-                                                                    <li>Rooms <span>6</span></li>
-                                                                    <li>Beds <span>2</span></li>
-                                                                    <li>Baths <span>3</span></li>
-                                                                </ul>
-                                                            </div>
-                                                            <img src="images/feature-properties/fp-5.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="agents-grid mr-0">
-                                                    <div class="listing-item compact">
-                                                        <a href="properties-details.html" class="listing-img-container">
-                                                            <div class="listing-badges">
-                                                                <span class="featured">$ 6,500</span>
-                                                                <span class="rent">For Rent</span>
-                                                            </div>
-                                                            <div class="listing-img-content">
-                                                                <span class="listing-compact-title">House Luxury <i>Toronto CA</i></span>
-                                                                <ul class="listing-hidden-content">
-                                                                    <li>Area <span>720 sq ft</span></li>
-                                                                    <li>Rooms <span>6</span></li>
-                                                                    <li>Beds <span>2</span></li>
-                                                                    <li>Baths <span>3</span></li>
-                                                                </ul>
-                                                            </div>
-                                                            <img src="images/feature-properties/fp-6.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                         @endforeach 
+                                         @endif
+                                              
                                             </div>
                                         </div>
                                     </div>

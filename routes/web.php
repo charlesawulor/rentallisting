@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::resource('single-property','ListingController');
 
+//Route::get('/single-property', 'ListingController@index'); 
+
 //Route::get('/single-property', 'ListingController@show')->name('single-property'); 
 
 //Route::post('/single-property', 'ListingController@postTour')->name('single-property'); 

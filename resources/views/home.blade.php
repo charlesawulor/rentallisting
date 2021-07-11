@@ -547,143 +547,41 @@
             <div class="container">
                 <div class="row">
                     <div class="section-title col-md-5">
-                        <h3>Properties</h3>
-                        <h2>For Rent</h2>
+                        <h3>Properties Type</h3>
+                        <h2>Apartment</h2>
                     </div>
                 </div>
                 <div class="row portfolio-items">
+
+                @if(count($listingsapartment) > 0)	
+	                                @foreach($listingsapartment as $listing)  
                     <div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
                         <div class="project-single" data-aos="zoom-in">
                             <div class="listing-item compact">
                                 <a href="single-property-1.html" class="listing-img-container">
                                     <div class="listing-badges">
-                                        <span class="featured">$ 230,000</span>
-                                        <span class="rent">For Rent</span>
+                                        <span class="featured">${{$listing->price}}</span>
+                                        <span class="rent">For {{$listing->status}}</span>
                                     </div>
                                     <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>New Yor City</i></span>
+                                        <span class="listing-compact-title">Luxury {{$listing->property_type}}  <i>{{$listing->city}}, {{$listing->state}}</i></span>
                                         <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
+                                            <li>Area <span>{{$listing->size}}</span></li>
+                                            <li>Living Room <span>{{$listing->livingroom}}</span></li>
+                                            <li>Bed Room <span>{{$listing->bedroom}}</span></li>
+                                            <li>Bathroom <span>{{$listing->bathroom}}</span></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/feature-properties/fp-1.jpg" alt="">
+                                    <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="item col-lg-4 col-md-6 col-xs-12 people rent">
-                        <div class="project-single" data-aos="zoom-in">
-                            <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
-                                    <div class="listing-badges">
-                                        <span class="featured">$ 6,500</span>
-                                        <span class="rent">For Rent</span>
-                                    </div>
-                                    <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>Los Angeles</i></span>
-                                        <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/feature-properties/fp-2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-6 col-xs-12 people landscapes sale">
-                        <div class="project-single" data-aos="zoom-in">
-                            <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
-                                    <div class="listing-badges">
-                                        <span class="featured">$ 230,000</span>
-                                        <span class="rent">For Rent</span>
-                                    </div>
-                                    <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>San Francisco</i></span>
-                                        <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/feature-properties/fp-3.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-6 col-xs-12 people landscapes rent no-pb">
-                        <div class="project-single no-mb" data-aos="zoom-in">
-                            <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
-                                    <div class="listing-badges">
-                                        <span class="featured">$ 6,500</span>
-                                        <span class="rent">For Rent</span>
-                                    </div>
-                                    <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>Miami FL</i></span>
-                                        <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/feature-properties/fp-4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-6 col-xs-12 people sale no-pb">
-                        <div class="project-single no-mb" data-aos="zoom-in">
-                            <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
-                                    <div class="listing-badges">
-                                        <span class="featured">$ 230,000</span>
-                                        <span class="rent">For Rent</span>
-                                    </div>
-                                    <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>Chicago IL</i></span>
-                                        <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/feature-properties/fp-5.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-6 it2 col-xs-12 web rent no-pb">
-                        <div class="project-single no-mb last" data-aos="zoom-in">
-                            <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
-                                    <div class="listing-badges">
-                                        <span class="featured">$ 6,500</span>
-                                        <span class="rent">For Rent</span>
-                                    </div>
-                                    <div class="listing-img-content">
-                                        <span class="listing-compact-title">House Luxury <i>Toronto CA</i></span>
-                                        <ul class="listing-hidden-content blue">
-                                            <li>Area <span>720 sq ft</span></li>
-                                            <li>Rooms <span>6</span></li>
-                                            <li>Beds <span>2</span></li>
-                                            <li>Baths <span>3</span></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/feature-properties/fp-6.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                @endforeach 
+                @endif
+
+              
+              
                 </div>
                 <div class="bg-all">
                     <a href="properties-full-grid-1.html" class="btn btn-outline-light">View All</a>
@@ -910,8 +808,7 @@
         <!-- STAR SECTION PARTNERS -->
 
         <!-- END SECTION PARTNERS -->
-
-
+       
 
 
 

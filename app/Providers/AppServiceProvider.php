@@ -27,5 +27,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         View::share('listings', listing::orderBy('id','desc')->take(4)->get());
+
+        View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
+
+
     }
 }
