@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use Session;
 use Illuminate\Http\Request;
-
 use App\Listing;
 
 class ListingController extends Controller
@@ -84,4 +83,8 @@ class ListingController extends Controller
     {
         //
     }
+
+    
+
+
 }

@@ -218,11 +218,9 @@
                                             <div class="nearby-list">
                                                 <ul class="property-list list-unstyled mb-0">
                                                    
-                                                    <li class="d-flex">
-                                                        <h6 class="mb-3 mr-2">{{$listings->worship_center}}</h6>
-                                                        
-                                                      
-                                                    </li>
+                                                 <li class="d-flex">
+                                            <h6 class="mb-3 mr-2">{{$listings->worship_center}}</h6>
+                                                  </li>
                                                   
                                                 </ul>
                                             </div>
@@ -451,6 +449,22 @@
                                                 <li><span class="la la-envelope-o"><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="#">{{$listings->agent_email}}</a></li>
                                             </ul>
                                             <div class="agent-contact-form-sidebar">
+                                            
+                      <!--  <div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'hidden' : ''}}" > {{ Session::get('error')}} </div> -->
+                                                <h4>Schedule a tour of property</h4>
+                                                <form name="contact_form" method="post" action="#">
+                                                    <input type="text" id="name" name="name" placeholder="Full Name" required />
+                                                    <input type="text" id="address" name="address" placeholder="billing address" class="billing-address" required />
+                                                    <input type="text" id="card-name" placeholder="Card holder name" required />
+                                                    <input type="text" id="card-number" placeholder="Card number" required />
+                                                    <input type="text" id="card-expiry-month" placeholder="Card expiry month" required />
+                                                    <input type="text" id="card-expiry-Year" placeholder="Card expiry year" required />
+                                                    <input type="text" id="card-cvc" placeholder="Card cvv" required />
+                                                    {{csrf_field()}}
+                                                    <button style="width:100%; height:50px; border-radius:1px solid #fb5d5d; background-color:#fb5d5d; color:white; font-weight: 700" type="submit" > PAY ${{$listings->inspection_cost}}</button>
+                                                </form>
+                                            </div>
+                                            <div class="agent-contact-form-sidebar">
                                                 <h4>Request Inquiry</h4>
                                                 <form name="contact_form" method="post" action="https://code-theme.com/html/findhouses/functions.php">
                                                     <input type="text" id="fname" name="full_name" placeholder="Full Name" required />
@@ -645,7 +659,7 @@
                     </aside>
                 </div>
                 <!-- START SIMILAR PROPERTIES -->
-                <section class="similar-property recently portfolio bshd p-0 bg-white-inner">
+            <!--    <section class="similar-property recently portfolio bshd p-0 bg-white-inner">
                     <div class="container">
                         <h5>Similar Properties</h5>
                         <div class="row portfolio-items">
@@ -656,7 +670,7 @@
                                             <h4><a href="single-property-1.html">View Property</a><span class="category">Real Estate</span></h4>
                                         </div>
                                         <div class="homes">
-                                            <!-- homes img -->
+                                          
                                             <a href="single-property-1.html" class="homes-img">
                                                 <div class="homes-tag button alt featured">Featured</div>
                                                 <div class="homes-tag button alt sale">For Sale</div>
@@ -670,16 +684,16 @@
                                             <a href="single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
                                         </div>
                                     </div>
-                                    <!-- homes content -->
+                                  
                                     <div class="homes-content">
-                                        <!-- homes address -->
+                                      
                                         <h3><a href="single-property-1.html">Real House Luxury Villa</a></h3>
                                         <p class="homes-address mb-3">
                                             <a href="single-property-1.html">
                                                 <i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
                                             </a>
                                         </p>
-                                        <!-- homes List -->
+                                     
                                         <ul class="homes-list clearfix">
                                             <li>
                                                 <i class="fa fa-bed" aria-hidden="true"></i>
@@ -698,7 +712,7 @@
                                                 <span>2 Grs</span>
                                             </li>
                                         </ul>
-                                        <!-- Price -->
+                                       
                                         <div class="price-properties">
                                             <h3 class="title mt-3">
                                 <a href="single-property-1.html">$ 230,000</a>
@@ -733,7 +747,7 @@
                                             <h4><a href="single-property-1.html">View Property</a><span class="category">Real Estate</span></h4>
                                         </div>
                                         <div class="homes">
-                                            <!-- homes img -->
+                                          
                                             <a href="single-property-1.html" class="homes-img">
                                                 <div class="homes-tag button alt featured">Featured</div>
                                                 <div class="homes-tag button sale rent">For Rent</div>
@@ -747,16 +761,16 @@
                                             <a href="single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
                                         </div>
                                     </div>
-                                    <!-- homes content -->
+                                   
                                     <div class="homes-content">
-                                        <!-- homes address -->
+                                     
                                         <h3><a href="single-property-1.html">Real House Luxury Villa</a></h3>
                                         <p class="homes-address mb-3">
                                             <a href="single-property-1.html">
                                                 <i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
                                             </a>
                                         </p>
-                                        <!-- homes List -->
+                                      
                                         <ul class="homes-list clearfix">
                                             <li>
                                                 <i class="fa fa-bed" aria-hidden="true"></i>
@@ -775,7 +789,7 @@
                                                 <span>2 Grs</span>
                                             </li>
                                         </ul>
-                                        <!-- Price -->
+                                   
                                         <div class="price-properties">
                                             <h3 class="title mt-3">
                                 <a href="single-property-1.html">$ 230,000</a>
@@ -810,7 +824,7 @@
                                             <h4><a href="properties-details.html">View Property</a><span class="category">Real Estate</span></h4>
                                         </div>
                                         <div class="homes">
-                                            <!-- homes img -->
+                                         
                                             <a href="single-property-1.html" class="homes-img">
                                                 <div class="homes-tag button alt featured">Featured</div>
                                                 <div class="homes-tag button alt sale">For Sale</div>
@@ -824,16 +838,16 @@
                                             <a href="single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
                                         </div>
                                     </div>
-                                    <!-- homes content -->
+                                   
                                     <div class="homes-content">
-                                        <!-- homes address -->
+                                     
                                         <h3><a href="single-property-1.html">Real House Luxury Villa</a></h3>
                                         <p class="homes-address mb-3">
                                             <a href="single-property-1.html">
                                                 <i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
                                             </a>
                                         </p>
-                                        <!-- homes List -->
+                                   
                                         <ul class="homes-list clearfix">
                                             <li>
                                                 <i class="fa fa-bed" aria-hidden="true"></i>
@@ -852,7 +866,7 @@
                                                 <span>2 Grs</span>
                                             </li>
                                         </ul>
-                                        <!-- Price -->
+                                       
                                         <div class="price-properties">
                                             <h3 class="title mt-3">
                                 <a href="single-property-1.html">$ 230,000</a>
@@ -882,7 +896,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- END SIMILAR PROPERTIES -->
             </div>
         </section>
@@ -892,3 +906,4 @@
 
 
 @endsection
+
