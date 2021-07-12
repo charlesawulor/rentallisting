@@ -17,7 +17,10 @@ Route::get('/', function () {
 
 
 Route::get('/home', 'ListingController@index')->name('home');
+
 Route::resource('single-property','ListingController');
+
+Route::get('/listing', 'ListingController@all')->name('listing');
 
 
 

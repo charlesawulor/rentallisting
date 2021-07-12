@@ -179,4 +179,11 @@ class ListingController extends Controller
           } 
          
 
+
+          public function all()
+          {
+              $listings = listing::orderBy('id','asc')->get();
+             return view('listing',compact ('alllistings'));
+          }
+
 }

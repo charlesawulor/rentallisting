@@ -38,6 +38,14 @@
     <link rel="stylesheet" href="{{asset('assets/css/slick.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
     <link rel="stylesheet" id="color" href="{{asset('assets/css/default.css')}}">
+
+
+      <!-- All Listing CSS -->
+      <link rel="stylesheet" href="{{asset('assets/css/search.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/aos2.css')}}">
+    <link rel="stylesheet" id="color" href="{{asset('assets/css/default.css')}}">
 </head>
 
 <body class="inner-pages sin-1 hd-white">
@@ -356,6 +364,20 @@
         <script src="{{asset('assets/js/map-single.js')}}"></script>
         <script src="{{asset('assets/js/color-switcher.js')}}"></script>
         <script src="{{asset('assets/js/inner.js')}}"></script>
+
+
+                <!-- ARCHIVES JS -->
+         
+        <script src="{{asset('assets/js/aos.js')}}"></script>
+        <script src="{{asset('assets/js/aos2.js')}}"></script>
+        <script src="{{asset('assets/js/smooth-scroll.min.js')}}"></script>
+        <script src="{{asset('assets/js/lightcase.js')}}"></script>
+        <script src="{{asset('assets/js/search.js')}}"></script>
+        <script src="{{asset('assets/js/light.js')}}"></script>
+        <script src="{{asset('assets/js/searched.js')}}"></script>
+        <script src="{{asset('assets/js/ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('assets/js/newsletter.js')}}"></script>
+
 
         <!-- Date Dropper Script-->
         <script>

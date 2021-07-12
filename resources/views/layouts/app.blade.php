@@ -72,16 +72,11 @@
                         <nav id="navigation" class="style-1 head-tr">
                             <ul id="responsive">
                                 <li><a href="#">Home</a> </li>
-                                    <li><a href="#">Listing</a>
-                                        <ul>
-                                            <li><a href="#">Listing Sell</a></li>
-                                               
-                                           
-                                            <li><a href="#">Listing Rent</a></li>
-                                         
-                                          
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{route('listing')}}">Listing</a></li>
+                                       
+                                    <li><a href="#">Sell</a></li>
+
+                                    <li><a href="#">Rent</a></li>
 
                                     <li><a href="#">About Us</a> </li>
                                    
