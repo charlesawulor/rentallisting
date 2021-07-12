@@ -95,6 +95,13 @@
                         </nav>
                         <!-- Main Navigation / End -->
                     </div>
+                    <div class="right-side d-none d-none d-lg-none d-xl-flex">
+                        <!-- Header Widget -->
+                        <div class="header-widget">
+                            <a href="{{route('appointment-cart')}}" class="button border"> {{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Appiontment</a>
+                        </div>
+                        <!-- Header Widget / End -->
+                    </div>
     
                 </div>
             </div>
