@@ -67,7 +67,7 @@
                         <!-- Main Navigation -->
                         <nav id="navigation" class="style-1">
                         <ul id="responsive">
-                                <li><a href="#">Home</a> </li>
+                                <li><a href="http://localhost/rentallisting/public/">Home</a> </li>
                                     <li><a href="#">Listing</a>
                                         <ul>
                                             <li><a href="#">Listing Sell</a></li>

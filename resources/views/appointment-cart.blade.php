@@ -67,7 +67,7 @@
 
         @else
  <div style="background-color:white" class="grand-totall">
-   <h2 style="text-align:center"> No Pending Appointment</h2>
+   <h2 style="text-align:center"> No Unpaid Appointment</h2>
    <br>
    <br>
     <!--  <a style="width:20%; margin: auto ; color:Blue; font-size:30px" href="{{route('home')}}">HOME</a>-->  

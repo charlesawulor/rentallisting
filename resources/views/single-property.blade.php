@@ -402,7 +402,7 @@
                                     
                                             <div class="pro-details-cart">
 
-                                            <a href="{{ route('single-property.addToCart', ['id'=>$listings->id])}}" class="btn reservation btn-radius theme-btn full-width mrg-top-10" style="color:white;background-color:blue">Add To Appointment List</a>
+                                            <a href="{{ route('single-property.addToCart', ['id'=>$listings->id])}}" class="btn reservation btn-radius theme-btn full-width mrg-top-10" style="color:white;font-size:20px; font-weight:bold;  background-color:blue">Pay ${{$listings->inspection_cost}} to book inspection appointment</a>
 
                                           </div>
 
@@ -448,14 +448,7 @@
                                         </div>
                                     </div>
                                     <!-- Start: Specials offer -->
-                                    <div class="widget-boxed popular mt-5">
-                                        <div class="widget-boxed-header">
-                                            <h4>Specials of the day</h4>
-                                        </div>
-                                        <div class="widget-boxed-body">
-                                            <div class="banner"><img src="images/single-property/banner.jpg" alt=""></div>
-                                        </div>
-                                    </div>
+                            
                                
                                 </div>
                             </div>

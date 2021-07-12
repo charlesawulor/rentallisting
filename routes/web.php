@@ -29,6 +29,9 @@ Route::get('/add-to-cart/{id}',[
     ]);
 
 
+
+
+
 Route::get('/reduce/{id}',[
         'uses' => 'ListingController@getReduceByOne',
         'as' => 'single-property.reduceByOne'     

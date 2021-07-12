@@ -94,7 +94,8 @@ class ListingController extends Controller
         $cart = new Cart($oldCart);
         $cart->add($listing, $listing->id);   
         $request->session()->put('cart',$cart);
-        return back();         
+       // return back(); 
+       return redirect()->route('appointment-cart');        
     }
 
   //   public function getReduceByOne($id) { 
