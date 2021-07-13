@@ -86,8 +86,8 @@
                                     <li><a href="{{route('rentlisting')}}">Rent</a>
                                     
                                     <ul>
-                                     <li><a href="index.html">House For Rent</a></li>
-                                      <li><a href="index-2.html">Apartment For Rent</a></li>
+                                     <li><a href="{{route('houses-for-rent')}}">House For Rent</a></li>
+                                      <li><a href="{{route('apartment-for-rent')}}">Apartment For Rent</a></li>
                                     </ul>
                                     
                                     </li>

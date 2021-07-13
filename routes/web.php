@@ -30,6 +30,10 @@ Route::get('/houses-for-sell', 'ListingController@listinghousesell')->name('hous
 
 Route::get('/apartment-for-sell', 'ListingController@listingapartmentsell')->name('apartment-for-sell');
 
+Route::get('/houses-for-rent', 'ListingController@listinghouserent')->name('houses-for-rent');
+
+Route::get('/apartment-for-rent', 'ListingController@listingapartmentrent')->name('apartment-for-rent');
+
 Route::get('/checkout', 'ListingController@getCheckout')->name('checkout'); 
 
 
