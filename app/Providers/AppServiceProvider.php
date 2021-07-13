@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        View::share('listings', listing::orderBy('id','desc')->take(4)->get());
+        View::share('listings', listing::orderBy('id','desc')->take(3)->get());
 
         View::share('alllistings', listing::orderBy('id','desc')->get());
 
