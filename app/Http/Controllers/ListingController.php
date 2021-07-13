@@ -54,6 +54,15 @@ class ListingController extends Controller
         return view('single-property')->with('listings',$listings);
     }
 
+
+    public function showfeatured($id)
+    {
+        $listings = listing::find($id);
+        return view('single-property')->with('featuredlistings',$listings);
+    }
+
+
+
     /**
      * Show the form for editing the specified resource.
      *

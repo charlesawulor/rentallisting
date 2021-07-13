@@ -34,6 +34,12 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('selllistings', listing::where('status','sell')->get());
 
+        View::share('featuredlistings', listing::orderByRaw("RAND()")->take(1)->get());
+
+        //User::orderByRaw("RAND()")->get();
+
+        //User::all()->random(10);
+
         View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
 
 

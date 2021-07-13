@@ -136,23 +136,23 @@
                                     <span class="det">{{$listings->id}}</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-bold mr-1">Property Type:</span>
+                                    <span class="font-weight-bold mr-1">Type:</span>
                                     <span class="det">{{$listings->property_type}}</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-bold mr-1">Property status:</span>
+                                    <span class="font-weight-bold mr-1">Availability:</span>
                                     <span class="det">For {{$listings->status}}</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-bold mr-1">Property Price:</span>
+                                    <span class="font-weight-bold mr-1">Price:</span>
                                     <span class="det">${{$listings->price}}</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-bold mr-1">Rooms:</span>
+                                    <span class="font-weight-bold mr-1">Livingroom:</span>
                                     <span class="det">{{$listings->livingroom}}</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-bold mr-1">Bedrooms:</span>
+                                    <span class="font-weight-bold mr-1">Bedroom:</span>
                                     <span class="det">{{$listings->bedroom}}</span>
                                 </li>
                                 <li>
@@ -160,7 +160,7 @@
                                     <span class="det">{{$listings->bathroom}}</span>
                                 </li>
                                 <li>
-                                    <span class="font-weight-bold mr-1">Garages:</span>
+                                    <span class="font-weight-bold mr-1">Garage:</span>
                                     <span class="det">{{$listings->garage}}</span>
                                 </li>
                               <!--  <li>
@@ -383,6 +383,27 @@
                             <!-- End: Schedule a Tour -->
                             <!-- end author-verified-badge -->
                             <div class="sidebar">
+                            <div class="widget-boxed mt-33 mt-5">
+                                    <div class="widget-boxed-header">
+                                        <h4>Office Hours</h4>
+                                    </div>
+                                    <div class="widget-boxed-body">
+                                        <div class="sidebar-widget author-widget2">
+                                            <div class="author-box clearfix">
+                                             
+                                                <h4 class="author__title">Mon -   10:00 AM to 6:00 PM <br>
+                                                Tue -   10:00 AM to 6:00 PM <br>
+                                                Wed -   10:00 AM to 6:00 PM <br>
+                                                Thu -   10:00 AM to 6:00 PM <br>
+                                                Fri -   10:00 AM to 6:00 PM <br>
+                                                Sat -   10:00 AM to 5:00 PM</h4>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="widget-boxed mt-33 mt-5">
                                     <div class="widget-boxed-header">
                                         <h4>Agent Information</h4>
@@ -410,6 +431,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="main-search-field-2">
                                   
                                     <div class="widget-boxed mt-5">
@@ -419,22 +441,22 @@
                                         <div class="widget-boxed-body">
                                             <div class="slick-lancers">
 
-                                            @if(count($listings) > 0)	
-	                                       @foreach($listings as $listing) 
+                                            @if(count($featuredlistings) > 0)	
+	                                       @foreach($featuredlistings as $listings) 
                                                 <div class="agents-grid mr-0">
                                                     <div class="listing-item compact">
-                                                        <a href="properties-details.html" class="listing-img-container">
+                                                        <a href="{{$listings->id}}" class="listing-img-container">
                                                             <div class="listing-badges">
-                                                                <span class="featured">$ 230,000</span>
-                                                                <span>For Sale</span>
+                                                                <span class="featured">${{$listings->price}}</span>
+                                                                <span>For {{$listings->status}}</span>
                                                             </div>
                                                             <div class="listing-img-content">
-                                                                <span class="listing-compact-title">House Luxury <i>New York</i></span>
+                                                                <span class="listing-compact-title">Luxury {{$listings->property_type}} <i>{{$listings->city}}, {{$listings->state}}</i></span>
                                                                 <ul class="listing-hidden-content">
-                                                                    <li>Area <span>720 sq ft</span></li>
-                                                                    <li>Rooms <span>6</span></li>
-                                                                    <li>Beds <span>2</span></li>
-                                                                    <li>Baths <span>3</span></li>
+                                                                    <li>Area <span>{{$listings->size}}</span></li>
+                                                                    <li>Sittingroom <span>{{$listings->sittingroom}}</span></li>
+                                                                    <li>Bedroom <span>{{$listings->bedroom}}</span></li>
+                                                                    <li>bathroom <span>{{$listings->bathroom}}</span></li>
                                                                 </ul>
                                                             </div>
                                                             <img src="/rentallisting/storage/app/public/{{$listings->image2}}" alt="">
