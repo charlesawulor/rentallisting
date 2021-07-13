@@ -56,9 +56,15 @@
                                     <td style = "position:relative; left:80%;" >
                               <h4 ><b> <span>${{$totalPrice}}</span> </b> </h4>
                              </td>
-                                </tbody>
+                                </tbody>              
                             </table>
                           
+                            <div class="pro-details-cart" style = "position:relative; left:80%;">
+
+<a href="{{route('checkout')}}" class="btn reservation btn-radius theme-btn full-width mrg-top-10" style="color:white;font-size:20px; font-weight:bold;  background-color:blue">Pay ${{$totalPrice}} To Book Inspection</a>
+
+</div>
+
                         </div>
                     </div>
                 </div>

@@ -42,6 +42,17 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
 
+        View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->get());
+
+        View::share('listingsapartmentsell', listing::where('property_type','apartment')->where('status','sell')->take(3)->get());
+
+        View::share('listingshouserent', listing::where('property_type','house')->where('status','rent')->take(3)->get());
+
+        View::share('listingshousesell', listing::where('property_type','house')->where('status','sell')->take(3)->get());
+
+        
+
+
 
     }
 }

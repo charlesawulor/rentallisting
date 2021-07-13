@@ -148,7 +148,7 @@ class ListingController extends Controller
 
       public function getCheckout(){
         if (!Session::has('cart')){
-            return view('shoppingcart');
+            return view('appointment-cart');
         }
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
@@ -205,6 +205,18 @@ class ListingController extends Controller
           {
               $listings = listing::orderBy('id','asc')->get();
              return view('selllisting',compact ('selllistings'));
+          }
+
+          public function listinghousesell()
+          {
+              $listings = listing::orderBy('id','asc')->get();
+             return view('houses-for-sell',compact ('listingshousesell'));
+          }
+
+          public function listingapartmentsell()
+          {
+              $listings = listing::orderBy('id','asc')->get();
+             return view('apartment-for-sell',compact ('listingsapartmentsell'));
           }
 
 }

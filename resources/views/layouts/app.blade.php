@@ -74,9 +74,23 @@
                                 <li><a href="#">Home</a> </li>
                                     <li><a href="{{route('listing')}}">Listing</a></li>
                                        
-                                    <li><a href="{{route('selllisting')}}">Sell</a></li>
+                                    <li><a href="{{route('selllisting')}}">Sell</a>
+                                    
+                                    <ul>
+                                     <li><a href="{{route('houses-for-sell')}}">House For Sell</a></li>
+                                      <li><a href="{{route('apartment-for-sell')}}">Apartment For Sell</a></li>
+                                    </ul>
+                                    
+                                    </li>
 
-                                    <li><a href="{{route('rentlisting')}}">Rent</a></li>
+                                    <li><a href="{{route('rentlisting')}}">Rent</a>
+                                    
+                                    <ul>
+                                     <li><a href="index.html">House For Rent</a></li>
+                                      <li><a href="index-2.html">Apartment For Rent</a></li>
+                                    </ul>
+                                    
+                                    </li>
 
                                     <li><a href="#">About Us</a> </li>
                                    

@@ -26,6 +26,12 @@ Route::get('/rentlisting', 'ListingController@rentlisting')->name('rentlisting')
 
 Route::get('/selllisting', 'ListingController@selllisting')->name('selllisting');
 
+Route::get('/houses-for-sell', 'ListingController@listinghousesell')->name('houses-for-sell');
+
+Route::get('/apartment-for-sell', 'ListingController@listingapartmentsell')->name('apartment-for-sell');
+
+Route::get('/checkout', 'ListingController@getCheckout')->name('checkout'); 
+
 
 
 
