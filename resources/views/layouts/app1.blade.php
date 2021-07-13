@@ -75,20 +75,34 @@
                         <!-- Main Navigation -->
                         <nav id="navigation" class="style-1">
                         <ul id="responsive">
-                                <li><a href="http://localhost/rentallisting/public/">Home</a> </li>
-                                <li><a href="{{route('listing')}}">Listing</a></li>
+                                <li><a href="#">Home</a> </li>
+                                    <li><a href="{{route('listing')}}">Listing</a></li>
                                        
-                                       <li><a href="{{route('selllisting')}}">Sell</a></li>
-   
-                                       <li><a href="{{route('rentlisting')}}">Rent</a></li>
-   
-                                       <li><a href="#">About Us</a> </li>
-                                      
+                                    <li><a href="{{route('selllisting')}}">Sell</a>
+                                    
+                                    <ul>
+                                     <li><a href="{{route('houses-for-sell')}}">House For Sell</a></li>
+                                      <li><a href="{{route('apartment-for-sell')}}">Apartment For Sell</a></li>
+                                    </ul>
+                                    
+                                    </li>
+
+                                    <li><a href="{{route('rentlisting')}}">Rent</a>
+                                    
+                                    <ul>
+                                     <li><a href="{{route('houses-for-rent')}}">House For Rent</a></li>
+                                      <li><a href="{{route('apartment-for-rent')}}">Apartment For Rent</a></li>
+                                    </ul>
+                                    
+                                    </li>
+
+                                    <li><a href="#">About Us</a> </li>
                                    
-                                       <li><a href="#">Blog</a></li>
-                                           
-                                       
-                                       <li><a href="contact-us.html">Contact</a></li>
+                                
+                                    <li><a href="#">Blog</a></li>
+                                        
+                                    
+                                    <li><a href="contact-us.html">Contact</a></li>
                                
                             </ul>
                         </nav>
