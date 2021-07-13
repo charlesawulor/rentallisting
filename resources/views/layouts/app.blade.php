@@ -58,7 +58,7 @@
                     <div class="left-side">
                         <!-- Logo -->
                         <div id="logo">
-                            <a href="index.html"><img src="{{asset('assets/images/logo-white-1.svg')}}" data-sticky-logo="{{asset('assets/images/logo-red.svg')}}" alt=""></a>
+                            <a href="http://localhost/rentallisting/public/"><img src="{{asset('assets/images/logo-white-1.svg')}}" data-sticky-logo="{{asset('assets/images/logo-red.svg')}}" alt=""></a>
                         </div>
                         <!-- Mobile Navigation -->
                         <div class="mmenu-trigger">
@@ -76,7 +76,7 @@
                                        
                                     <li><a href="#">Sell</a></li>
 
-                                    <li><a href="#">Rent</a></li>
+                                    <li><a href="{{route('rentlisting')}}">Rent</a></li>
 
                                     <li><a href="#">About Us</a> </li>
                                    

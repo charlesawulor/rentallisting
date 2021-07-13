@@ -30,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('alllistings', listing::orderBy('id','desc')->get());
 
+        View::share('rentlistings', listing::where('status','rent')->get());
+
         View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
 
 

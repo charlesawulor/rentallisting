@@ -62,7 +62,7 @@
                     <div class="left-side">
                         <!-- Logo -->
                         <div id="logo">
-                            <a href="index.html"><img src="{{asset('assets/images/logo.svg')}}" alt=""></a>
+                            <a href="http://localhost/rentallisting/public/"><img src="{{asset('assets/images/logo.svg')}}" alt=""></a>
                         </div>
                         <!-- Mobile Navigation -->
                         <div class="mmenu-trigger">
@@ -76,24 +76,19 @@
                         <nav id="navigation" class="style-1">
                         <ul id="responsive">
                                 <li><a href="http://localhost/rentallisting/public/">Home</a> </li>
-                                    <li><a href="#">Listing</a>
-                                        <ul>
-                                            <li><a href="#">Listing Sell</a></li>
-                                               
-                                           
-                                            <li><a href="#">Listing Rent</a></li>
-                                         
-                                          
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="#">About Us</a> </li>
+                                <li><a href="{{route('listing')}}">Listing</a></li>
+                                       
+                                       <li><a href="#">Sell</a></li>
+   
+                                       <li><a href="{{route('rentlisting')}}">Rent</a></li>
+   
+                                       <li><a href="#">About Us</a> </li>
+                                      
                                    
-                                
-                                    <li><a href="#">Blog</a></li>
-                                        
-                                    
-                                    <li><a href="contact-us.html">Contact</a></li>
+                                       <li><a href="#">Blog</a></li>
+                                           
+                                       
+                                       <li><a href="contact-us.html">Contact</a></li>
                                
                             </ul>
                         </nav>

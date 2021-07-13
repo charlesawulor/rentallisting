@@ -22,6 +22,8 @@ Route::resource('single-property','ListingController');
 
 Route::get('/listing', 'ListingController@all')->name('listing');
 
+Route::get('/rentlisting', 'ListingController@rentlisting')->name('rentlisting');
+
 
 
 
