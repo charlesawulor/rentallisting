@@ -192,4 +192,10 @@ class ListingController extends Controller
              return view('rentlisting',compact ('rentlistings'));
           }
 
+          public function selllisting()
+          {
+              $listings = listing::orderBy('id','asc')->get();
+             return view('selllisting',compact ('selllistings'));
+          }
+
 }

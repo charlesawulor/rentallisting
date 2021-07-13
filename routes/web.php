@@ -24,6 +24,8 @@ Route::get('/listing', 'ListingController@all')->name('listing');
 
 Route::get('/rentlisting', 'ListingController@rentlisting')->name('rentlisting');
 
+Route::get('/selllisting', 'ListingController@selllisting')->name('selllisting');
+
 
 
 

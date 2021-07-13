@@ -78,7 +78,7 @@
                                 <li><a href="http://localhost/rentallisting/public/">Home</a> </li>
                                 <li><a href="{{route('listing')}}">Listing</a></li>
                                        
-                                       <li><a href="#">Sell</a></li>
+                                       <li><a href="{{route('selllisting')}}">Sell</a></li>
    
                                        <li><a href="{{route('rentlisting')}}">Rent</a></li>
    
