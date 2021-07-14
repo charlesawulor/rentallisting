@@ -233,5 +233,15 @@ class ListingController extends Controller
              return view('apartment-for-rent',compact ('listingsapartmentrent'));
           }
 
+          
+          public function    listingallapartment()
+          {
+              $listings = listing::orderBy('id','asc')->get();
+             return view('all-apartments',compact ('listingsallapartment'));
+          }
 
+
+
+
+       
 }

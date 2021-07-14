@@ -189,7 +189,7 @@
 
                 </div>
                 <div class="bg-all">
-                    <a href="{{route('listing')}}" class="btn btn-outline-light">View All</a>
+                    <a href="{{route('all-apartments')}}" class="btn btn-outline-light">View All</a>
                 </div>
 
             </div>

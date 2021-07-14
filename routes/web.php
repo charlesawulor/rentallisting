@@ -36,6 +36,8 @@ Route::get('/apartment-for-rent', 'ListingController@listingapartmentrent')->nam
 
 Route::get('/checkout', 'ListingController@getCheckout')->name('checkout'); 
 
+Route::get('/all-apartments', 'ListingController@listingallapartment')->name('all-apartments');
+
 
 
 
