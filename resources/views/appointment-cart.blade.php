@@ -40,7 +40,7 @@
                                               
                                             </div>
                                         </td>
-                                        <td>{{$listing['item']['agent_email']}} | {{$listing['item']['agent_email']}} | {{$listing['item']['agent_number']}} </td>
+                                        <td>{{$listing['item']['agent_name']}} | {{$listing['item']['agent_email']}} | {{$listing['item']['agent_number']}} </td>
                                         <td>x{{$listing['qty']}}</td>
                                         <td>${{$listing['price']}}</td>
                                         <td >

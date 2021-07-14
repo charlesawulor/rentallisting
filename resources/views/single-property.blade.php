@@ -18,7 +18,8 @@
                                                 <h3>Luxury {{$listings->property_type}} <span class="mrg-l-5 category-tag">For {{$listings->status}}</span></h3>
                                                 <div class="mt-0">
                                                     <a href="#listing-location" class="listing-address">
-                                                        <i class="fa fa-map-marker pr-2 ti-location-pin mrg-r-5"></i>{{$listings->address}},{{$listings->zip_code}} {{$listings->city}},{{$listings->country}}.
+                                                        <i class="fa fa-map-marker pr-2 ti-location-pin mrg-r-5"></i>{{$listings->address}}, <br>
+                                                        {{$listings->zip_code}} {{$listings->city}},{{$listings->country}}.
                                                     </a>
                                                 </div>
                                             </div>
@@ -196,7 +197,7 @@
                                     <div class="col-lg-12">
                                         <div class="nearby-info mb-4">
                                             <span class="nearby-title mb-3 d-block text-info">
-                                               <i class="fas fa-graduation-cap mr-2"></i><b class="title">Education</b>
+                                               <i class="fas fa-graduation-cap mr-2"></i><b class="title">Schools</b>
                                             </span>
                                             <div class="nearby-list">
                                                 <ul class="property-list list-unstyled mb-0">
@@ -211,25 +212,12 @@
                                             </div>
                                         </div>
 
-                                        <div class="nearby-info mb-4">
-                                            <span class="nearby-title mb-3 d-block text-info">
-                                               <i class="fas fa-graduation-cap mr-2"></i><b class="title">Worship Centers</b>
-                                            </span>
-                                            <div class="nearby-list">
-                                                <ul class="property-list list-unstyled mb-0">
-                                                   
-                                                 <li class="d-flex">
-                                            <h6 class="mb-3 mr-2">{{$listings->worship_center}}</h6>
-                                                  </li>
-                                                  
-                                                </ul>
-                                            </div>
-                                        </div>
+                                     
                                         
                                         
                                         <div class="nearby-info mb-4">
                                             <span class="nearby-title mb-3 d-block text-info">
-                                               <i class="fas fa-graduation-cap mr-2"></i><b class="title">Shops & Malls</b>
+                                               <i class="fas fa-store mr-2"></i><b class="title">Shops & Malls</b>
                                             </span>
                                             <div class="nearby-list">
                                                 <ul class="property-list list-unstyled mb-0">
@@ -252,7 +240,7 @@
 
                                         <div class="nearby-info mb-4">
                                             <span class="nearby-title mb-3 d-block text-info">
-                                               <i class="fas fa-graduation-cap mr-2"></i><b class="title">Shops & Malls</b>
+                                               <i class="fas fa-baby mr-2"></i><b class="title">Parks</b>
                                             </span>
                                             <div class="nearby-list">
                                                 <ul class="property-list list-unstyled mb-0">
@@ -391,12 +379,13 @@
                                         <div class="sidebar-widget author-widget2">
                                             <div class="author-box clearfix">
                                              
-                                                <h4 class="author__title">Mon -   10:00 AM to 6:00 PM <br>
-                                                Tue -   10:00 AM to 6:00 PM <br>
-                                                Wed -   10:00 AM to 6:00 PM <br>
-                                                Thu -   10:00 AM to 6:00 PM <br>
-                                                Fri -   10:00 AM to 6:00 PM <br>
-                                                Sat -   10:00 AM to 5:00 PM</h4>
+                                                <h4 class="author__title">
+                                              <p>  Mon -   10:00 AM to 6:00 PM </p>
+                                              <p>   Tue -   10:00 AM to 6:00 PM </p>
+                                              <p>   Wed -   10:00 AM to 6:00 PM </p>
+                                              <p>  Thu -   10:00 AM to 6:00 PM </p>
+                                              <p>   Fri -   10:00 AM to 6:00 PM </p>
+                                              <p>   Sat -   10:00 AM to 5:00 PM </p>
                                                
                                             </div>
                                            
