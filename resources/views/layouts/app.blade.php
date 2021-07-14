@@ -131,12 +131,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
-                            <div class="netabout">
-                                <a href="index.html" class="logo">
-                                    <img src="{{asset('assets/images/logo-footer.svg')}}" alt="netcom">
-                                </a>
                             
-                            </div>
                            <!-- <div class="contactus">
                                 <ul>
                                     <li>

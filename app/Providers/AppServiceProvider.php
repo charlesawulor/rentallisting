@@ -26,19 +26,15 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        View::share('listings', listing::orderBy('id','desc')->take(3)->get());
+        View::share('listings', listing::orderBy('id','desc')->take(3)->get());        
 
-        View::share('alllistings', listing::orderBy('id','desc')->get());
+       // View::share('alllistings', listing::orderBy('id','desc')->get());
 
         View::share('rentlistings', listing::where('status','rent')->get());
 
         View::share('selllistings', listing::where('status','sell')->get());
 
         View::share('featuredlistings', listing::orderByRaw("RAND()")->take(1)->get());
-
-        //User::orderByRaw("RAND()")->get();
-
-        //User::all()->random(10);
 
         View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
 
@@ -53,10 +49,7 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('listingsallapartment', listing::where('property_type','apartment')->get());
 
-
-        
-
-
+        View::share('homefeaturedlistings', listing::orderByRaw("RAND()")->take(2)->get());
 
     }
 }

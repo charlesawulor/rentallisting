@@ -7,6 +7,7 @@ use App\Listing;
 use Stripe\Charge;
 use Stripe\Stripe;
 use App\Cart;
+//use Illuminate\Support\Facades\DB;
 
 class ListingController extends Controller
 {
@@ -187,12 +188,18 @@ class ListingController extends Controller
             return redirect()->route('ordercomplete')->with('success', 'Payment successful');
           } 
          
-
+         
 
           public function all()
           {
-              $listings = listing::orderBy('id','asc')->get();
-             return view('listing',compact ('alllistings'));
+             // $listings = listing::orderBy('id','asc')->get();
+              $alllistings = listing::paginate(2);
+          
+
+              // $alllistings = DB::table('listings')->paginate(2);
+              // return view('listing',['alllistings'=>$alllistings]);
+
+              return view('listing',compact ('alllistings'));
           }
 
           public function rentlisting()

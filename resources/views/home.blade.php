@@ -165,7 +165,7 @@
                     <div class="item col-lg-4 col-md-6 col-xs-12 landscapes sale">
                         <div class="project-single" data-aos="zoom-in">
                             <div class="listing-item compact">
-                                <a href="single-property-1.html" class="listing-img-container">
+                                <a href="single-property/{{$listing->id}}" class="listing-img-container">
                                     <div class="listing-badges">
                                         <span class="featured">${{$listing->price}}</span>
                                         <span class="rent">For {{$listing->status}}</span>
@@ -205,10 +205,14 @@
                             <h3>Featured Properties.</h3>
                             <p>We Help you find the best places and offer near you. Bring to the table win-win survival strategies to ensure proactive domination going forward.</p>
                             <div class="inf-btn pro">
-                                <a href="contact-us.html" class="btn btn-pro btn-secondary btn-lg">Get Started</a>
+                                <a href="{{route('listing')}}" class="btn btn-pro btn-secondary btn-lg">Explore</a>
                             </div>
                         </div>
                     </div>
+
+                    
+                    @if(count($homefeaturedlistings) > 0)	
+	                                       @foreach($homefeaturedlistings as $listings) 
                     <div class="featured portfolio home18 item col-lg-4 col-md-6 landscapes sale">
                         <div class="project-single specials" data-aos="fade-left">
                             <div class="project-inner project-head">
@@ -216,89 +220,53 @@
                                     <!-- homes img -->
                                     <a href="single-property-1.html" class="homes-img">
                                         <div class="homes-tag button alt featured">Featured</div>
-                                        <div class="homes-tag button alt sale">For Sale</div>
-                                        <div class="homes-price">$9,000/mo</div>
-                                        <img src="assets/images/blog/b-11.jpg" alt="home-1" class="img-responsive">
+                                        <div class="homes-tag button alt sale">For {{$listings->status}}</div>
+                                        <div class="homes-price">${{$listings->price }}</div>
+                                        <img src="/rentallisting/storage/app/public/{{$listings->image}}" alt="home-1" class="img-responsive">
                                     </a>
                                 </div>
+
                                 <div class="button-effect">
-                                    <a href="single-property-1.html" class="btn"><i class="fa fa-link"></i></a>
-                                    <a href="https://www.youtube.com/watch?v=14semTlwyUY" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
-                                    <a href="single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
+                                    <a href="single-property/{{$listing->id}}" class="btn"><i class="fa fa-link"></i></a>
+                                   
                                 </div>
+
                             </div>
                             <!-- homes content -->
                             <div class="homes-content">
                                 <!-- homes address -->
-                                <h3><a href="single-property-1.html">Real House Luxury Villa</a></h3>
+                                <h3><a href="single-property-1.html"> Luxury {{$listings->property_type}} </a></h3>
                                 <p class="homes-address mb-3">
                                     <a href="single-property-1.html">
-                                        <i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+                                        <i class="fa fa-map-marker"></i><span>{{$listings->address}}, <br>
+                                         {{$listings->zip_code}} {{$listings->city}},{{$listings->state}}</span>
                                     </a>
                                 </p>
                                 <!-- homes List -->
                                 <ul class="homes-list clearfix pb-0">
                                     <li>
-                                        <span>6 Bedrooms</span>
+                                        <span>Bedrooms : {{$listings->bedroom}}</span>
                                     </li>
                                     <li>
-                                        <span>3 Bathrooms</span>
+                                        <span>Bathrooms : {{$listings->bathroom}}</span>
                                     </li>
                                     <li>
-                                        <span>720 sq ft</span>
+                                        <span>{{$listings->size}}</span>
                                     </li>
                                     <li>
-                                        <span>2 Garages</span>
+                                        <span>Garages : {{$listings->garage}}</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="featured portfolio home18 item col-lg-4 col-md-6 people landscapes rent no-pb">
-                        <div class="project-single no-mb" data-aos="fade-left">
-                            <div class="project-inner project-head">
-                                <div class="homes">
-                                    <!-- homes img -->
-                                    <a href="single-property-1.html" class="homes-img">
-                                        <div class="homes-tag button alt featured">Featured</div>
-                                        <div class="homes-tag button sale rent">For Rent</div>
-                                        <div class="homes-price">$3,000/mo</div>
-                                        <img src="assets/images/feature-properties/fp-10.jpg" alt="home-1" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="button-effect">
-                                    <a href="single-property-1.html" class="btn"><i class="fa fa-link"></i></a>
-                                    <a href="https://www.youtube.com/watch?v=14semTlwyUY" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
-                                    <a href="single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
-                                </div>
-                            </div>
-                            <!-- homes content -->
-                            <div class="homes-content">
-                                <!-- homes address -->
-                                <h3><a href="single-property-1.html">Real House Luxury Villa</a></h3>
-                                <p class="homes-address mb-3">
-                                    <a href="properties-details.html">
-                                        <i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
-                                    </a>
-                                </p>
-                                <!-- homes List -->
-                                <ul class="homes-list clearfix pb-0">
-                                    <li>
-                                        <span>6 Bedrooms</span>
-                                    </li>
-                                    <li>
-                                        <span>3 Bathrooms</span>
-                                    </li>
-                                    <li>
-                                        <span>720 sq ft</span>
-                                    </li>
-                                    <li>
-                                        <span>2 Garages</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    @endif
+
+
+           
+
+
                 </div>
             </div>
         </section>
@@ -333,7 +301,7 @@
                                         </ul>
                                     </div>
                                     <div class="news-item-descr big-news">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur.</p>
+                                        <p></p>
                                     </div>
                                     <div class="news-item-bottom">
                                         <a href="blog-details.html" class="news-link">Read more...</a>
@@ -363,7 +331,7 @@
                                         </ul>
                                     </div>
                                     <div class="news-item-descr big-news">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur.</p>
+                                        <p></p>
                                     </div>
                                     <div class="news-item-bottom">
                                         <a href="blog-details.html" class="news-link">Read more...</a>
@@ -393,7 +361,7 @@
                                         </ul>
                                     </div>
                                     <div class="news-item-descr big-news">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur.</p>
+                                        <p></p>
                                     </div>
                                     <div class="news-item-bottom">
                                         <a href="blog-details.html" class="news-link">Read more...</a>
