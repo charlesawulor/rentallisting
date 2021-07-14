@@ -22,21 +22,14 @@
                                 <!-- Search Form -->
                                 <div class="col-12">
                                     <div class="banner-search-wrap">
-                                        <ul class="nav nav-tabs rld-banner-tab">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" href="#tabs_1">For Sale</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#tabs_2">For Rent</a>
-                                            </li>
-                                        </ul>
+                                     
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="tabs_1">
                                                 <div class="rld-main-search">
                                                     <div class="row">
 
-                                                        <div class="rld-single-input">
-                                                            <input type="text" placeholder="Enter Keyword...">
+                                                        <div class="rld-single-input" style="width:80%">
+                                                            <input type="text" placeholder=" Search City" style="width:80%">
                                                         </div>
 
                                                         <div class="col-xl-2 col-lg-2 col-md-4 pl-0">
@@ -125,7 +118,7 @@
                                 <h3>Wide Renge Of Properties</h3>
                             </div>
                             <div class="service-text-p">
-                                <p class="text-center">lorem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directory.</p>
+                                <p class="text-center"></p>
                             </div>
                         </div>
                     </article>
@@ -136,7 +129,7 @@
                                 <h3>Trusted by thousands</h3>
                             </div>
                             <div class="service-text-p">
-                                <p class="text-center">lorem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directory.</p>
+                                <p class="text-center"></p>
                             </div>
                         </div>
                     </article>
@@ -147,7 +140,7 @@
                                 <h3>Financing made easy</h3>
                             </div>
                             <div class="service-text-p">
-                                <p class="text-center">lorem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directory.</p>
+                                <p class="text-center"></p>
                             </div>
                         </div>
                     </article>
@@ -195,7 +188,9 @@
                 @endif
 
                 </div>
-
+                <div class="bg-all">
+                    <a href="{{route('listing')}}" class="btn btn-outline-light">View All</a>
+                </div>
 
             </div>
         </section>
