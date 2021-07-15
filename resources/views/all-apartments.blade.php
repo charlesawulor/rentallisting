@@ -101,23 +101,13 @@
 
 
                 </div>
-               <!-- <nav aria-label="..." class="pt-3">
+                <nav aria-label="..." class="pt-3">
                     <ul class="pagination grid-3">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        <li class="page-item active">
-                            <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
+                      
+                       {{$listingsallapartment->links()}}
+
                     </ul>
-                </nav> -->
+                </nav>
             </div>
         </section>
 

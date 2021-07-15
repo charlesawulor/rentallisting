@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('listings', listing::orderBy('id','desc')->take(3)->get());        
 
-        View::share('alllistings', listing::orderBy('id','desc')->paginate(2));
+        View::share('alllistings', listing::orderBy('id','desc')->paginate(9));
 
         View::share('rentlistings', listing::where('status','rent')->get());
 
@@ -41,16 +41,16 @@ class AppServiceProvider extends ServiceProvider
 
       // View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->get());
 
-      View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->paginate(2));
+      View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->paginate(9));
 
-        View::share('listingsapartmentsell', listing::where('property_type','apartment')->where('status','sell')->take(3)->get());
+        View::share('listingsapartmentsell', listing::where('property_type','apartment')->where('status','sell')->take(9)->paginate(1));
 
-        View::share('listingshouserent', listing::where('property_type','house')->where('status','rent')->take(3)->paginate(2));
+        View::share('listingshouserent', listing::where('property_type','house')->where('status','rent')->take(3)->paginate(9));
 
-        View::share('listingshousesell', listing::where('property_type','house')->where('status','sell')->take(3)->get());
+        View::share('listingshousesell', listing::where('property_type','house')->where('status','sell')->take(3)->paginate(9));
 
 
-        View::share('listingsallapartment', listing::where('property_type','apartment')->get());
+        View::share('listingsallapartment', listing::where('property_type','apartment')->paginate(9));
 
         View::share('homefeaturedlistings', listing::orderByRaw("RAND()")->take(2)->get());
 
