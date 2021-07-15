@@ -26,9 +26,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+
         View::share('listings', listing::orderBy('id','desc')->take(3)->get());        
 
-       // View::share('alllistings', listing::orderBy('id','desc')->get());
+        View::share('alllistings', listing::orderBy('id','desc')->paginate(2));
 
         View::share('rentlistings', listing::where('status','rent')->get());
 
@@ -38,11 +39,13 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
 
-        View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->get());
+      // View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->get());
+
+      View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->paginate(2));
 
         View::share('listingsapartmentsell', listing::where('property_type','apartment')->where('status','sell')->take(3)->get());
 
-        View::share('listingshouserent', listing::where('property_type','house')->where('status','rent')->take(3)->get());
+        View::share('listingshouserent', listing::where('property_type','house')->where('status','rent')->take(3)->paginate(2));
 
         View::share('listingshousesell', listing::where('property_type','house')->where('status','sell')->take(3)->get());
 

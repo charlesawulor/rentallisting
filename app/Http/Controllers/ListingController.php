@@ -192,12 +192,10 @@ class ListingController extends Controller
 
           public function all()
           {
-             // $listings = listing::orderBy('id','asc')->get();
-              $alllistings = listing::paginate(2);
+             $listings = listing::orderBy('id','asc')->get();
+             // $alllistings = listing::paginate(2);
           
 
-              // $alllistings = DB::table('listings')->paginate(2);
-              // return view('listing',['alllistings'=>$alllistings]);
 
               return view('listing',compact ('alllistings'));
           }
@@ -236,8 +234,17 @@ class ListingController extends Controller
 
           public function listingapartmentrent()
           {
-              $listings = listing::orderBy('id','asc')->get();
-             return view('apartment-for-rent',compact ('listingsapartmentrent'));
+            $listings = listing::orderBy('id','asc')->get();
+
+            // $listingsapartmentrent =  listing::paginate(1);
+
+             return view('apartment-for-rent',compact ('listings'));
+
+
+           //  $alllistings = listing::paginate(2);
+
+            // return view('listing',compact ('alllistings'));
+
           }
 
           
