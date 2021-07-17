@@ -27,15 +27,15 @@
                                             <div class="tab-pane fade show active" id="tabs_1">
                                                 <div class="rld-main-search">
                                                     <div class="row">
-
+                                                     <form action="{{route('result')}}" method="GET">  
                                                         <div class="rld-single-input" style="width:80%">
-                                                            <input type="text" placeholder=" Search City" style="width:80%">
+                                                            <input type="text" name="query" placeholder=" Search City" style="width:80%">
                                                         </div>
 
                                                         <div class="col-xl-2 col-lg-2 col-md-4 pl-0">
                                                             <a class="btn btn-yellow" href="#">Search Now</a>
                                                         </div>
-
+                                                      </form>
                                                       
                                                     </div>
 

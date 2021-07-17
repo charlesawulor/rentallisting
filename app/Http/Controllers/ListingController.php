@@ -255,6 +255,28 @@ class ListingController extends Controller
           }
 
 
+         // public function  searchlist()
+         // {
+         //  $search = request()->query('search');
+         //  if ($search) {
+         //  $searchlisting = Listing::where('city','LIKE',"%{$search}%");
+          // return view('result',compact ('searchlisting'));
+        //   } 
+        //   return view('result',compact ('searchlisting'));
+           
+
+         // }
+
+
+         public function search()
+         {
+         $search_text = $_GET['query'];
+         $searchlisting = Listing::where('city','LIKE', '%' . $search_text. '%')->GET();
+         return view('result',compact ('searchlisting'));
+         }
+
+         
+
 
 
        

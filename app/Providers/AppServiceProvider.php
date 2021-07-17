@@ -39,9 +39,7 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('listingsapartment', listing::where('property_type','apartment')->take(3)->get());
 
-      // View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->get());
-
-      View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->paginate(9));
+        View::share('listingsapartmentrent', listing::where('property_type','apartment')->where('status','rent')->take(3)->paginate(9));
 
         View::share('listingsapartmentsell', listing::where('property_type','apartment')->where('status','sell')->take(9)->paginate(1));
 
@@ -53,6 +51,9 @@ class AppServiceProvider extends ServiceProvider
         View::share('listingsallapartment', listing::where('property_type','apartment')->paginate(9));
 
         View::share('homefeaturedlistings', listing::orderByRaw("RAND()")->take(2)->get());
+
+      //  View::share('searchlistings', listing::where('city','LIKE',"%{$search}%")->get());
+
 
     }
 }

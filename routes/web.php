@@ -38,6 +38,8 @@ Route::get('/checkout', 'ListingController@getCheckout')->name('checkout');
 
 Route::get('/all-apartments', 'ListingController@listingallapartment')->name('all-apartments');
 
+Route::get('/result', 'ListingController@search')->name('result'); 
+
 
 
 
