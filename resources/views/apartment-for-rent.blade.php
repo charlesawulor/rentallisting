@@ -28,7 +28,7 @@
                                         <div class="homes-tag button alt featured">${{$listing->price}}</div>
                                         <div class="homes-tag button alt sale">For {{$listing->status}}</div>
                                         <div class="homes-price">Pet : {{$listing->pet}}</div>
-                                        <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="home-1" class="img-responsive">
+                                        <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="home-1" class="img-responsive" style="height:250px">
                                     </a>
                                 </div>
                             
