@@ -83,7 +83,7 @@
                                             <li>Baths <span>{{$listing->bathroom}}</span></li>
                                         </ul>
                                     </div>
-                                    <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="">
+                                    <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="" style="height:250px">
                                 </a>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                                             <li>Bathroom <span>{{$listing->bathroom}}</span></li>
                                         </ul>
                                     </div>
-                                    <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="">
+                                    <img src="/rentallisting/storage/app/public/{{$listing->image}}" alt="" style="height:250px">
                                 </a>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                                         <div class="homes-tag button alt featured">Featured</div>
                                         <div class="homes-tag button alt sale">For {{$listings->status}}</div>
                                         <div class="homes-price">${{$listings->price }}</div>
-                                        <img src="/rentallisting/storage/app/public/{{$listings->image}}" alt="home-1" class="img-responsive">
+                                        <img src="/rentallisting/storage/app/public/{{$listings->image}}" alt="home-1" class="img-responsive" style="height:250px">
                                     </a>
                                 </div>
 
