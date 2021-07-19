@@ -50,7 +50,6 @@ class ListingController extends AdminController
         $grid->column('state', __('State'));
         $grid->column('country', __('Country'));
         $grid->column('school', __('School'));
-        $grid->column('worship_center', __('Worship center'));
         $grid->column('park', __('Park'));
         $grid->column('mall', __('Mall'));
         $grid->column('shop', __('Shop'));
@@ -102,7 +101,6 @@ class ListingController extends AdminController
         $show->field('state', __('State'));
         $show->field('country', __('Country'));
         $show->field('school', __('School'));
-        $show->field('worship_center', __('Worship center'));
         $show->field('park', __('Park'));
         $show->field('mall', __('Mall'));
         $show->field('shop', __('Shop'));
@@ -152,7 +150,6 @@ class ListingController extends AdminController
         $form->text('state', __('State'));
         $form->text('country', __('Country'));
         $form->text('school', __('School'));
-        $form->text('worship_center', __('Worship center'));
         $form->text('park', __('Park'));
         $form->text('mall', __('Mall'));
         $form->text('shop', __('Shop'));

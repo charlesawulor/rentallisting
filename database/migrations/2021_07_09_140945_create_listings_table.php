@@ -38,7 +38,6 @@ class CreateListingsTable extends Migration
             $table->string('state');
             $table->string('country');
             $table->string('school');
-            $table->string('worship_center');
             $table->string('park');
             $table->string('mall');
             $table->string('shop');
