@@ -23,31 +23,31 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <label>Full Name</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="name" name="name" class="form-control">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label>Address</label>
-                                                    <input type="email" class="form-control">
+                                                    <input type="text" id="address" name="address" class="form-control">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label>Card Holder Name</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="card-name" class="form-control">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label>Credit Card Number</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="card-number" class="form-control">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label>Expiration Month</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text"  id="card-expiry-month" class="form-control">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label>Expiration Year</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="card-expiry-Year" class="form-control">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label>Card CVC</label>
-                                                    <input type="text" class="form-control address mb-0">
+                                                    <input type="text" id="card-cvc" class="form-control address mb-0">
                                                 </div>                                           
                                             </div> <br>
                                            
@@ -91,15 +91,11 @@
             </div>
         </section>
 
+@endsection
 
+@section('scripts')
 
-
-
-
-
-
-
-
-
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="{{ URL::to('src/js/checkout.js')}}"></script>
 
 @endsection
