@@ -7,6 +7,10 @@ use App\Listing;
 use Stripe\Charge;
 use Stripe\Stripe;
 use App\Cart;
+use App\Http\Requests;
+use App\Order;
+
+
 //use Illuminate\Support\Facades\DB;
 
 class ListingController extends Controller
@@ -161,7 +165,7 @@ class ListingController extends Controller
       public function postCheckout(Request $request)
       {
           if (!Session::has('cart')){
-             return redirect()->route('shoppingcart');
+             return redirect()->route('ordercomplete');
          }
          $oldCart = Session::get('cart');
          $cart = new Cart($oldCart);
@@ -173,14 +177,14 @@ class ListingController extends Controller
               "currency" => "usd",
               "source" =>'tok_visa', //use this for test cards
            // "source" => $request->input('stripeToken'), // use this for real cards when In production
-              "description" => "Charge for fashion store"
+              "description" => "Charge for property inspection appointment booking"
               ));
               $order = new Order();
               $order->cart = serialize($cart);
               $order->address = $request->input('address');
               $order->name = $request->input('name');
               $order->payment_id = $charge->id;
-              Auth::user()->orders()->save($order);            
+             // Auth::user()->orders()->save($order);             
              } catch (\Exception $e){
                return redirect()->route('checkout')->with('error',$e->getMessage());
             }

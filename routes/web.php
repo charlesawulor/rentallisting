@@ -36,6 +36,10 @@ Route::get('/apartment-for-rent', 'ListingController@listingapartmentrent')->nam
 
 Route::get('/checkout', 'ListingController@getCheckout')->name('checkout'); 
 
+Route::post('/checkout', 'ListingController@postCheckout')->name('checkout'); 
+
+Route::get('/ordercomplete', 'ListingController@postCheckout')->name('ordercomplete'); 
+
 Route::get('/all-apartments', 'ListingController@listingallapartment')->name('all-apartments');
 
 Route::get('/result', 'ListingController@search')->name('result'); 

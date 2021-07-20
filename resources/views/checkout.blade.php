@@ -20,7 +20,10 @@
                                             <div class="tr-single-header">
                                                 <h4><i class="far fa-address-card pr-2"></i>Billing Information</h4>
                                             </div>
-                                            <div class="row">
+                                            <div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'hidden' : ''}}" > {{ Session::get('error')}} </div>
+                        
+                        <form action="{{route('checkout')}}" method="post" id="checkout-form">
+                                            <div class="row">                                    
                                                 <div class="col-sm-6">
                                                     <label>Full Name</label>
                                                     <input type="text" id="name" name="name" class="form-control">
@@ -48,14 +51,19 @@
                                                 <div class="col-sm-6">
                                                     <label>Card CVC</label>
                                                     <input type="text" id="card-cvc" class="form-control address mb-0">
-                                                </div>                                           
-                                            </div> <br>
+                                                </div>  
+                                                {{csrf_field()}}  
+                                                <button class="btn reservation btn-radius theme-btn full-width mrg-top-10" type="submit" style="color:white;font-size:20px; font-weight:bold;  background-color:blue">Pay ${{$totalPrice}} </button>
+                                            
+                                            </div> 
                                            
-<a href="{{route('checkout')}}" class="btn reservation btn-radius theme-btn full-width mrg-top-10" style="color:white;font-size:20px; font-weight:bold;  background-color:blue">Pay ${{$totalPrice}} </a>
+                                            </form>
 
                                         </div>
                                     </div>
                                 </div>
+
+
                                 <div class="col-md-12 col-lg-6">
                                     <div class="tr-single-box">
                                         <div class="tr-single-body">
