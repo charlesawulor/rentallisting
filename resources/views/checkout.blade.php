@@ -48,12 +48,11 @@
                                                 <div class="col-sm-6">
                                                     <label>Card CVC</label>
                                                     <input type="text" class="form-control address mb-0">
-                                                </div>
-                                            <!--    <div class="col-sm-6">
-                                                    <label>Zip</label>
-                                                    <input type="text" class="form-control mb-0">
-                                                </div> -->
-                                            </div>
+                                                </div>                                           
+                                            </div> <br>
+                                           
+<a href="{{route('checkout')}}" class="btn reservation btn-radius theme-btn full-width mrg-top-10" style="color:white;font-size:20px; font-weight:bold;  background-color:blue">Pay ${{$totalPrice}} </a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -65,16 +64,16 @@
                                             </div>
                                             <!-- Paypal Option -->
            @foreach($listings as $listing)
-           <ul><li>Date<strong class="pull-right">{{$listing['item']['price']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['address']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['city']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['zip_code']}}</strong></li></ul>
-                                    
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['state']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['property_type']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['agent_name']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['agent_number']}}</strong></li></ul>
-              <ul><li>Date<strong class="pull-right">{{$listing['item']['agent_email']}}</strong></li></ul>
+           <ul><li>Price<strong class="pull-right">${{$listing['item']['price']}}</strong></li></ul>
+              <ul><li>Property Address<strong class="pull-right">{{$listing['item']['address']}}</strong></li></ul>
+              <ul><li>Zip Code<strong class="pull-right">{{$listing['item']['zip_code']}}</strong></li></ul>
+              <ul><li>City<strong class="pull-right">{{$listing['item']['city']}}</strong></li></ul>                                  
+              <ul><li>State<strong class="pull-right">{{$listing['item']['state']}}</strong></li></ul>
+              <ul><li>Property Type<strong class="pull-right">{{$listing['item']['property_type']}}</strong></li></ul>
+              <ul><li>Status<strong class="pull-right">For {{$listing['item']['status']}}</strong></li></ul>
+              <ul><li>Agent Name<strong class="pull-right">{{$listing['item']['agent_name']}}</strong></li></ul>
+              <ul><li>Agent Number<strong class="pull-right">{{$listing['item']['agent_number']}}</strong></li></ul>
+              <ul><li>Agent Email<strong class="pull-right">{{$listing['item']['agent_email']}}</strong></li></ul>
              
                                     
               @endforeach                                
