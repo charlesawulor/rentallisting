@@ -34,7 +34,7 @@ Route::get('/houses-for-rent', 'ListingController@listinghouserent')->name('hous
 
 Route::get('/apartment-for-rent', 'ListingController@listingapartmentrent')->name('apartment-for-rent');
 
-Route::get('/checkout', 'ListingController@getCheckout')->name('checkout'); 
+Route::get('/checkout', 'ListingController@getCheckout')->name('checkout')->middleware('auth'); 
 
 Route::post('/checkout', 'ListingController@postCheckout')->name('checkout'); 
 

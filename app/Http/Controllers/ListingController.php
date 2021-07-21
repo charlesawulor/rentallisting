@@ -1,15 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use Session;
-use Illuminate\Http\Request;
+use App\Cart;
 use App\Listing;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use Session;
+use Auth;
 use Stripe\Charge;
 use Stripe\Stripe;
-use App\Cart;
-use App\Http\Requests;
 use App\Order;
-
 
 //use Illuminate\Support\Facades\DB;
 
@@ -184,7 +184,7 @@ class ListingController extends Controller
               $order->address = $request->input('address');
               $order->name = $request->input('name');
               $order->payment_id = $charge->id;
-             // Auth::user()->orders()->save($order);             
+              Auth::user()->orders()->save($order);             
              } catch (\Exception $e){
                return redirect()->route('checkout')->with('error',$e->getMessage());
             }
