@@ -96,13 +96,33 @@
                                     
                                     </li>
 
-                                    <li><a href="#">About Us</a> </li>
-                                   
-                                
-                                    <li><a href="#">Blog</a></li>
+                                    @guest 
+
+                                    <li><a href="{{ route('login') }}">Login</a></li>
+
+                                    @if (Route::has('register'))
                                         
-                                    
-                                    <li><a href="contact-us.html">Contact</a></li>
+                                    <li><a href="{{ route('register') }}">Sign-Up</a></li>
+
+                                 @endif
+
+                        @else
+
+                      <!--  <li> <a href="#">{{ Auth::user()->name }} </a>  </li> -->
+
+                        <li>   <a href="{{ route('my-orders') }}" class="header-action-btn login-btn"                            
+                                      >My Appointments</a> </li> 
+                        <li> <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Sign Out</a>  </li>
+
+
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                </form> 
+
+                @endguest 
                                
                             </ul>
                         </nav>

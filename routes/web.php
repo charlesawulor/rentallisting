@@ -44,6 +44,8 @@ Route::get('/all-apartments', 'ListingController@listingallapartment')->name('al
 
 Route::get('/result', 'ListingController@search')->name('result'); 
 
+Route::get('/my-orders', 'UserController@getProfile')->name('my-orders'); 
+
 
 
 
