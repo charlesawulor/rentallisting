@@ -54,6 +54,9 @@
             <!-- Header -->
             <div id="header" class="head-tr bottom">
                 <div class="container container-header">
+
+
+              
                     <!-- Left Side Content -->
                     <div class="left-side">
                         <!-- Logo -->
@@ -71,6 +74,9 @@
                         <!-- Main Navigation -->
                         <nav id="navigation" class="style-1 head-tr">
                             <ul id="responsive">
+                         
+                            
+                    
                                 <li><a href="#">Home</a> </li>
                                     <li><a href="{{route('listing')}}">Listing</a></li>
                                        
@@ -92,21 +98,55 @@
                                     
                                     </li>
 
-                                    <li><a href="#">About Us</a> </li>
-                                   
-                                
-                                    <li><a href="#">Blog</a></li>
+                     
+
+                                    @guest 
+
+                                    <li><a href="{{ route('login') }}">Login</a></li>
+
+                                    @if (Route::has('register'))
                                         
-                                    
-                                    <li><a href="contact-us.html">Contact</a></li>
-                               
-                            </ul>
+                                    <li><a href="{{ route('register') }}">Sign-Up</a></li>
+
+                                 @endif
+
+                        @else
+
+                        <li> <a href="#">Welcome, {{ Auth::user()->name }} </a>  </li>
+                        <li> <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Sign Out</a>  </li>
+
+
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                </form> 
+
+                @endguest 
+
+
+
+
+
+
+               </ul>
                         </nav>
                         <!-- Main Navigation / End -->
                     </div>
-                    <div class="right-side d-none d-none d-lg-none d-xl-flex">
+
+                   
+
+
+
+
+
+                    <div class="right-side d-none d-none d-lg-none d-xl-flex">  
+
+                                     
                         <!-- Header Widget -->
                         <div class="header-widget">
+
                             <a href="{{route('appointment-cart')}}" class="button border"> {{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Appiontment</a>
                         </div>
                         <!-- Header Widget / End -->

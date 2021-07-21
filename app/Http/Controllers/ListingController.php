@@ -165,7 +165,7 @@ class ListingController extends Controller
       public function postCheckout(Request $request)
       {
           if (!Session::has('cart')){
-             return redirect()->route('ordercomplete');
+             return redirect()->route('appointment-cart');
          }
          $oldCart = Session::get('cart');
          $cart = new Cart($oldCart);

@@ -79,3 +79,6 @@ Route::get('/appointment-cart', 'ListingController@getCart')->name('appointment-
 //Route::post('/single-property', 'ListingController@postTour')->name('single-property'); 
 
 //Route::get('/home', 'ListingController@show')->name('home');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
