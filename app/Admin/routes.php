@@ -15,6 +15,8 @@ Route::group([
 
     $router->resource('listings', ListingController::class);
 
+    $router->resource('orders', OrderController::class);
+
 
 
 });

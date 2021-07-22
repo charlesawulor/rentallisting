@@ -6,7 +6,6 @@
 
 
 
-@if(Session::has('cart'))
 
 <section class="user-page section-padding pt-5">
             <div class="container-fluid">
@@ -15,15 +14,17 @@
                     <div class="col-lg-12 col-md-12 col-xs-12 pl-0 user-dash2">
                     
                         <div class="my-properties">
+                        @foreach($orders as $order)
                             <table class="table-responsive">
                                 <thead>
                                     <tr>
-                                        <th class="pl-2">Unpaid Property Inspection Appointment(s)</th>
-                                        <th class="p-0"></th>
-                                        <th>Agent Information</th>
-                                        <th>Number Of Appointment(s)</th>
-                                        <th>Inspection Cost</th>
-                                        <th>Delete  </th>
+                                        
+                                        <th>Agent/Management Name</th>
+                                        <th>Agent Phone Number</th>
+                                        <th>Property Address</th>
+                                       
+                                        
+                                      
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -32,29 +33,31 @@
                                     <tr>
                                      
                                       
-                                    <td>{{ $item['item'] ['product_name'] }}</td> 
-                                        <td>{{$item ['address'] }} </td>
+                                    <td>{{$item ['item'] ['agent_name']  }}</td>
+                                     <td>{{$item ['item'] ['agent_number']  }}</td>
+                                     <td>{{$item ['item'] ['address']  }}, {{$item ['item'] ['zip_code']  }} , {{$item ['item'] ['city']  }}. {{$item ['item'] ['state']  }}</td>
+                                 
+                             
                                     
                                     </tr>
-                                    @endforeach
+                                @endforeach
 
                                 </tbody>              
                             </table>
-                          
+                            @endforeach
         
 
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </section>
 
       
-   
-
-@endif
-
-
+ 
 
 
 

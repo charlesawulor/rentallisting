@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use App\Listing;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -51,6 +52,9 @@ class AppServiceProvider extends ServiceProvider
         View::share('listingsallapartment', listing::where('property_type','apartment')->paginate(9));
 
         View::share('homefeaturedlistings', listing::orderByRaw("RAND()")->take(2)->get());
+
+           
+
 
       //  View::share('searchlistings', listing::where('city','LIKE',"%{$search}%")->get());
 
