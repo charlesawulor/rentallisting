@@ -3,9 +3,6 @@
 @section('content')
 
 
-
-
-
 @if(Session::has('cart'))
 
 <section class="user-page section-padding pt-5">
@@ -72,8 +69,10 @@
         </section>
 
         @else
- <div style="background-color:white" class="grand-totall">
-   <h2 style="text-align:center"> No Unpaid Appointment</h2>
+        <div style="background-color:white" class="grand-totall">
+   <h2 style="text-align:center">
+   <img src="assets/images/feature-properties/unpaid.png" alt="">
+    </h2>
    <br>
    <br>
     <!--  <a style="width:20%; margin: auto ; color:Blue; font-size:30px" href="{{route('home')}}">HOME</a>-->  
@@ -81,15 +80,6 @@
    
 
 @endif
-
-
-
-
-
-
-
-
-
 
 
 
