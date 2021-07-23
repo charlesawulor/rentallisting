@@ -298,15 +298,10 @@
                                             <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
                                         </ul>
                                     </div>
-                                    <div class="news-item-descr big-news">
-                                        <p></p>
-                                    </div>
+                                    
                                     <div class="news-item-bottom">
                                         <a href="blog-details.html" class="news-link">Read more...</a>
-                                        <div class="admin">
-                                            <p>By, Karl Smith</p>
-                                            <img src="assets/images/testimonials/ts-6.jpg" alt="">
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -328,15 +323,10 @@
                                             <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
                                         </ul>
                                     </div>
-                                    <div class="news-item-descr big-news">
-                                        <p></p>
-                                    </div>
+                                   
                                     <div class="news-item-bottom">
                                         <a href="blog-details.html" class="news-link">Read more...</a>
-                                        <div class="admin">
-                                            <p>By, Lis Jhonson</p>
-                                            <img src="assets/images/testimonials/ts-5.jpg" alt="">
-                                        </div>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -358,15 +348,10 @@
                                             <li class="action-item"><i class="fa fa-share-alt"></i> <span>122</span></li>
                                         </ul>
                                     </div>
-                                    <div class="news-item-descr big-news">
-                                        <p></p>
-                                    </div>
+                                   
                                     <div class="news-item-bottom">
                                         <a href="blog-details.html" class="news-link">Read more...</a>
-                                        <div class="admin">
-                                            <p>By, Ted Willians</p>
-                                            <img src="assets/images/testimonials/ts-4.jpg" alt="">
-                                        </div>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -394,3 +379,5 @@
 
 
 @endsection
+
+

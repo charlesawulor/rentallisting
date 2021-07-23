@@ -116,6 +116,7 @@
 
                         <li>   <a href="{{ route('my-orders') }}" class="header-action-btn login-btn"                            
                                       >My Appointments</a> </li> 
+
                         <li> <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Sign Out</a>  </li>
@@ -145,12 +146,17 @@
 
 
                     <div class="right-side d-none d-none d-lg-none d-xl-flex">  
+                    
+                   
 
-                                     
                         <!-- Header Widget -->
                         <div class="header-widget">
 
-                            <a href="{{route('appointment-cart')}}" class="button border"> {{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Appiontment</a>
+                       
+
+
+
+                            <a href="{{route('appointment-cart')}}" class="button border fa fa-calendar" > {{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Appointment</a>
                         </div>
                         <!-- Header Widget / End -->
                     </div>
