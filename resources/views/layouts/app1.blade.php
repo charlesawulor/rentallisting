@@ -98,11 +98,11 @@
 
                                     @guest 
 
-                                    <li><a href="{{ route('login') }}">Login</a></li>
+                                    <li style="background-color:#274abb;border-radius:10%;color:white"><a href="{{ route('login') }}" style="color:white">Login</a></li>
 
                                     @if (Route::has('register'))
                                         
-                                    <li><a href="{{ route('register') }}">Sign-Up</a></li>
+                                    <li style="background-color:#274abb;border-radius:10%;color:white"><a href="{{ route('register') }}" style="color:white">Sign-Up</a></li>
 
                                  @endif
 
@@ -112,9 +112,9 @@
 
                         <li>   <a href="{{ route('my-orders') }}" class="header-action-btn login-btn"                            
                                       >My Appointments</a> </li> 
-                        <li> <a href="{{ route('logout') }}"
+                       <li style="background-color:#274abb;border-radius:10%"> <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Sign Out</a>  </li>
+                                                     document.getElementById('logout-form').submit();" style="color:white" >Sign Out</a>  </li>
 
 
 
@@ -134,7 +134,7 @@
                     <div class="right-side d-none d-none d-lg-none d-xl-flex">
                         <!-- Header Widget -->
                         <div class="header-widget">
-                            <a href="{{route('appointment-cart')}}" class="button border"> {{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Appiontment</a>
+                            <a href="{{route('appointment-cart')}}" class="button border fa fa-calendar"> {{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Appiontment</a>
                         </div>
                         <!-- Header Widget / End -->
                     </div>
