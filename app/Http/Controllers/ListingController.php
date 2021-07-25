@@ -170,7 +170,7 @@ class ListingController extends Controller
          $oldCart = Session::get('cart');
          $cart = new Cart($oldCart);
          
-   Stripe::setApiKey('sk_test_51Io4hXACLwpJgLfCVSFzJMfIoYRSfnzavlSQIMDzzaTnwziz6vtwrCyGutVROodumwZabXSPvFDC9Q6GKyf8Mz3w002rLASPxn');
+   Stripe::setApiKey('enter stripe secret ket');
          try {
            $charge = Charge::create(array(
               "amount" => $cart->totalPrice * 100,
