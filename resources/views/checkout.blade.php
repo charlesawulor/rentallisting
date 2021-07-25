@@ -23,7 +23,8 @@
                                             <div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'hidden' : ''}}" > {{ Session::get('error')}} </div>
                         
                         <form action="{{route('checkout')}}" method="post" id="checkout-form">
-                                            <div class="row">                                    
+                                            <div class="row">   
+                                                                        
                                                 <div class="col-sm-6">
                                                     <label>Full Name</label>
                                                     <input type="text" id="name" name="name" class="form-control">
