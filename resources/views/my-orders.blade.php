@@ -37,10 +37,14 @@
                                      <td>{{$item ['item'] ['agent_number']  }}</td>
                                      <td>{{$item ['item'] ['address']  }}, {{$item ['item'] ['zip_code']  }} , {{$item ['item'] ['city']  }}. {{$item ['item'] ['state']  }}</td>
                                  
+                                     
                              
                                     
                                     </tr>
                                 @endforeach
+
+
+                             
 
                                 </tbody>              
                             </table>

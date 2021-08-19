@@ -60,9 +60,9 @@
                     <!-- Left Side Content -->
                     <div class="left-side">
                         <!-- Logo -->
-                        <div id="logo">
+                       <!-- <div id="logo">
                             <a href="http://localhost/rentallisting/public/"><img src="{{asset('assets/images/logo-white-1.svg')}}" data-sticky-logo="{{asset('assets/images/logo-red.svg')}}" alt=""></a>
-                        </div>
+                        </div> -->
                         <!-- Mobile Navigation -->
                         <div class="mmenu-trigger">
                             <button class="hamburger hamburger--collapse" type="button">
@@ -116,6 +116,7 @@
 
                         <li>   <a href="{{ route('my-orders') }}" class="header-action-btn login-btn"                            
                                       >My Appointments</a> </li> 
+                                      
                   <li style="background-color:#FF385C;border-radius:10%"> <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Sign Out</a>  </li>

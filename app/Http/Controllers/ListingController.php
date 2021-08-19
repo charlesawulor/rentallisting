@@ -170,7 +170,7 @@ class ListingController extends Controller
          $oldCart = Session::get('cart');
          $cart = new Cart($oldCart);
          
-   Stripe::setApiKey('enter stripe secret ket');
+   Stripe::setApiKey('sk_test_51Io4hXACLwpJgLfCVSFzJMfIoYRSfnzavlSQIMDzzaTnwziz6vtwrCyGutVROodumwZabXSPvFDC9Q6GKyf8Mz3w002rLASPxn');
          try {
            $charge = Charge::create(array(
               "amount" => $cart->totalPrice * 100,
@@ -265,7 +265,7 @@ class ListingController extends Controller
          public function search()
          {
          $search_text = $_GET['query'];
-         $searchlisting = Listing::where('city',  'LIKE', '%' . $search_text. '%')->orWhere('zip_code',  'LIKE', '%' . $search_text. '%')->paginate(1);
+         $searchlisting = Listing::where('city',  'LIKE', '%' . $search_text. '%')->orWhere('zip_code',  'LIKE', '%' . $search_text. '%');
          return view('result',compact ('searchlisting'));
          }
 

@@ -28,7 +28,7 @@ class OrderController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('user_id', __('User id'));
-        $grid->column('cart', __('Cart'));
+       // $grid->column('cart', __('Cart'));
         $grid->column('address', __('Address'));
         $grid->column('name', __('Name'));
         $grid->column('payment_id', __('Payment id'));
@@ -50,7 +50,7 @@ class OrderController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('user_id', __('User id'));
-        $show->field('cart', __('Cart'));
+        //$show->field('cart', __('Cart'));
         $show->field('address', __('Address'));
         $show->field('name', __('Name'));
         $show->field('payment_id', __('Payment id'));

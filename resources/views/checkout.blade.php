@@ -24,7 +24,7 @@
                         
                         <form action="{{route('checkout')}}" method="post" id="checkout-form">
                                             <div class="row">   
-                                                                        
+                                                                     
                                                 <div class="col-sm-6">
                                                     <label>Full Name</label>
                                                     <input type="text" id="name" name="name" class="form-control">
