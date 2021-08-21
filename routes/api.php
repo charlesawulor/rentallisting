@@ -28,3 +28,9 @@ Route::prefix('/user')->group( function() {
     Route::post('/register', 'api\v1\LoginController@register');
         
     });
+
+
+    Route::prefix('/listing')->group( function() {
+        Route::get('/allproperty', 'api\v1\PropertyController@allproperty');
+            
+        });
