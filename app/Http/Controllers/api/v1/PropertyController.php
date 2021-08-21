@@ -13,4 +13,15 @@ class PropertyController extends Controller
      return Listing::all();
 
     }
+
+
+ 
+ 
+public function search($name)
+{
+   return Listing::where("state",$name )->orWhere("zip_code",$name )->get();
+}
+
+
+
 }

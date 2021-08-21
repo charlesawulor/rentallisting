@@ -34,3 +34,11 @@ Route::prefix('/user')->group( function() {
         Route::get('/allproperty', 'api\v1\PropertyController@allproperty');
             
         });
+
+
+        Route::prefix('/listing')->group( function() {
+        Route::get('/search/{name}', 'api\v1\PropertyController@search');
+        });
+
+
+           // Route::get('/search/{name}', 'api\v1\PropertyController@search');
