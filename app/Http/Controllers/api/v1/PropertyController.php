@@ -17,10 +17,14 @@ class PropertyController extends Controller
 
  
  
-public function search($name)
-{
-   return Listing::where("state",$name )->orWhere("zip_code",$name )->get();
-}
+
+    public function search($name)
+    {
+       return Listing::where("city",$name )->orWhere("zip_code",$name )->get();
+    }
+
+
+
 
 
 
