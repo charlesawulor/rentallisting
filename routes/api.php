@@ -31,13 +31,19 @@ Route::prefix('/user')->group( function() {
 
 
     Route::prefix('/listing')->group( function() {
-        Route::get('/allproperty', 'api\v1\PropertyController@allproperty');       
-        });
+    Route::get('/allproperty', 'api\v1\PropertyController@allproperty');       
+    });
 
 
-        Route::prefix('/listing')->group( function() {
-            Route::get('/apartment', 'api\v1\PropertyController@apartment');       
-            });
+    Route::prefix('/listing')->group( function() {
+    Route::get('/apartment', 'api\v1\PropertyController@apartment');       
+    });
+
+    Route::prefix('/listing')->group( function() {
+    Route::get('/house', 'api\v1\PropertyController@house');       
+    });
+
+         
 
 
         Route::prefix('/listing')->group( function() {

@@ -20,16 +20,18 @@ class PropertyController extends Controller
 
     public function apartment()
     {
-     return Listing::where('property_type','apartment')->take(3)->get();
+     return Listing::where('property_type','apartment')->get();
 
     }
 
 
+    public function house()
+    {
+     return Listing::where('property_type','house')->get();
+
+    }
 
 
-
- 
- 
 
  
 
