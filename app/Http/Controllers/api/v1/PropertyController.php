@@ -13,23 +13,33 @@ class PropertyController extends Controller
 
     public function allproperty()
     {
-     return Listing::all();
+   //  return Listing::all();
+     return response()->json(Listing::all(),200);
 
     }
 
 
     public function apartment()
     {
-     return Listing::where('property_type','apartment')->get();
-
+     //return Listing::where('property_type','apartment')->get();
+     return response()->json(Listing::where('property_type','apartment')->get(),200);
     }
 
 
     public function house()
     {
-     return Listing::where('property_type','house')->get();
-
+     //return Listing::where('property_type','house')->get();
+     return response()->json(Listing::where('property_type','house')->get(),200);
     }
+
+
+    public function propertysell()
+    {
+     //return Listing::where('property_type','house')->get();
+     return response()->json(Listing::where('status','sell')->get(),200);
+    }
+  
+
 
 
 

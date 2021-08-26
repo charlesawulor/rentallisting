@@ -43,11 +43,14 @@ Route::prefix('/user')->group( function() {
     Route::get('/house', 'api\v1\PropertyController@house');       
     });
 
+    Route::prefix('/listing')->group( function() {
+        Route::get('/propertysell', 'api\v1\PropertyController@propertysell');       
+        });
          
 
 
-        Route::prefix('/listing')->group( function() {
-        Route::get('/search', 'api\v1\PropertyController@search');
+    Route::prefix('/listing')->group( function() {
+    Route::get('/search', 'api\v1\PropertyController@search');
     });
 
 
