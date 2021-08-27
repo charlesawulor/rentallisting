@@ -39,7 +39,12 @@ class PropertyController extends Controller
      return response()->json(Listing::where('status','sell')->get(),200);
     }
   
-
+    public function propertyrent()
+    {
+     //return Listing::where('property_type','house')->get();
+     return response()->json(Listing::where('status','rent')->get(),200);
+    }
+  
 
 
 
