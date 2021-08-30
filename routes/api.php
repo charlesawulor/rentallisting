@@ -50,12 +50,20 @@ Route::prefix('/user')->group( function() {
     Route::prefix('/listing')->group( function() {
     Route::get('/propertyrent', 'api\v1\PropertyController@propertyrent');       
      });
+
+
+    Route::prefix('/listing')->group( function() {
+    Route::get('/singleproperty/{id}', 'api\v1\PropertyController@singlepropertybyid');        
+    });
          
+    //Route::get('/singleproperty/{id}', 'api\v1\PropertyController@singlepropertybyid'); 
 
 
     Route::prefix('/listing')->group( function() {
     Route::get('/search', 'api\v1\PropertyController@search');
     });
+
+
 
 
 

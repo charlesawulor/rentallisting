@@ -45,8 +45,15 @@ class PropertyController extends Controller
      return response()->json(Listing::where('status','rent')->get(),200);
     }
   
-
-
+    public function singlepropertybyid($id)
+    {
+     $singleproperty = Listing::find($id);
+     if(is_null($singleproperty)){
+     return response()->json(['message' => 'Property not found'],404);
+        }
+return response()->json($singleproperty::find($id),200);
+    }
+   
 
  
 
