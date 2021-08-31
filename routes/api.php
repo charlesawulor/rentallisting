@@ -55,6 +55,10 @@ Route::prefix('/user')->group( function() {
     Route::prefix('/listing')->group( function() {
     Route::get('/singleproperty/{id}', 'api\v1\PropertyController@singlepropertybyid');        
     });
+
+    Route::prefix('/listing')->group( function() {
+    Route::put('/updateproperty/{id}', 'api\v1\PropertyController@updateproperty');        
+     });
          
     //Route::get('/singleproperty/{id}', 'api\v1\PropertyController@singlepropertybyid'); 
 

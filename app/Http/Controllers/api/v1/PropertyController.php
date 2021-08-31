@@ -55,6 +55,16 @@ return response()->json($singleproperty::find($id),200);
     }
    
 
+    public function updateproperty(Request $request, $id){
+      $updateproperty = Listing::find($id);
+         if(is_null($updateproperty)){
+         return response()->json(['message' => 'Property not found'],404);
+            }
+    $updateproperty->update($request->all());
+    return response($updateproperty,200);
+    
+    }
+
  
 
     public function search(Request $request)
