@@ -91,7 +91,7 @@
     </h2>
    <br>
    <br>
-    <!--  <a style="width:20%; margin: auto ; color:Blue; font-size:30px" href="{{route('home')}}">HOME</a>-->  
+   
    </div>
 
 
