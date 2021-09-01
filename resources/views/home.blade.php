@@ -360,11 +360,7 @@
                 </div>
             </div>
         </section>
-        <!-- END SECTION BLOG -->
-
-        <!-- STAR SECTION PARTNERS -->
-
-        <!-- END SECTION PARTNERS -->
+  
        
 
 
